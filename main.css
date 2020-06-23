@@ -5,14 +5,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  position: fixed;
+  margin-top: 15px;
   width: 100%;
 }
 
 .nav .logo {
   position: absolute;
   right: 15px;
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 
 .nav .links {
@@ -27,7 +28,7 @@
 
 .nav .links .link {
   padding: 10px 10px;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-transform: uppercase;
   margin: 0px 10px;
 }
@@ -35,6 +36,32 @@
 .nav .links .link a {
   color: black;
   text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+main .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px 50px;
+  font-size: 1.2em;
+}
+
+main .show {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
 }
 
 * {
@@ -50,23 +77,64 @@ header {
   width: 100%;
 }
 
+header .draw {
+  height: 100%;
+  width: 100%;
+  stroke-width: 25px;
+  stroke-dasharray: 6500;
+  stroke-dashoffset: 6500;
+  fill: transparent;
+  -webkit-animation: 3s ease-in forwards;
+          animation: 3s ease-in forwards;
+  -webkit-animation-name: line;
+          animation-name: line;
+}
+
 header .video {
-  height: 90vh;
+  position: relative;
+  height: 100vh;
   width: 100%;
 }
 
 header .video:before {
   content: '';
   position: absolute;
-  background: #e22c87;
-  height: 90vh;
+  background: url("wave.gif");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  z-index: 2;
-  opacity: 0.25;
+  z-index: -1;
+  opacity: 0.15;
 }
 
-header .video img {
-  height: 90vh;
+header .video .overlay {
+  position: absolute;
+  height: 100vh;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #e22785), to(white));
+  background: linear-gradient(to bottom, #e22785 50%, white);
+  opacity: 0.2;
+}
+
+header .video .intro {
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes line {
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
+}
+
+@keyframes line {
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
