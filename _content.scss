@@ -1,5 +1,4 @@
 main {
-    height: 100vh;
     width: 100%;
     
     .intro {
@@ -7,14 +6,13 @@ main {
         justify-content: center;
         text-align: center;
         padding: 10px 50px;
-       font-size: 1.2em;
+        font-size: 1.2em;
     }
 
     .podcast {
         @include displayMain;
-        // background: linear-gradient(to bottom, rgb(255, 255, 255) 45%,rgba(226, 39, 133, 0.4));
-        // background: rgba(226, 39, 133, 0.3);
-        height: 100%;
+        height: 100vh;
+        width: 100%;
         
         .episode {
             @include displayMain;
@@ -85,7 +83,7 @@ main {
     
     .newsletter {
         @include displayMain;
-        height: 50%;
+        height: 50vh;
         width: 100%;
         text-align: center;
         
@@ -127,6 +125,14 @@ main {
                 height: 40px;
                 width: 100px;
                 color: $primary-color;
+                transition: 0.3s ease-in;
+
+                &:hover {
+                    color: white;
+                    background: $primary-color;
+                    border: none;
+                    cursor: pointer;
+                }
             }
         }
     }
