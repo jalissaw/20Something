@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-
-$primary-color: rgba(230, 10, 120, 0.6);
-
-
-@mixin displayNav {
-    display: flex;
-    align-items: center;
-}
-
-@mixin displayMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin displayFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-=======
 $primary-color: rgba(230, 10, 120, 0.6);
 
 
@@ -42,4 +19,3 @@ $primary-color: rgba(230, 10, 120, 0.6);
     justify-content: center;
 }
 
->>>>>>> 78173b55b7b99a506b58e5440ec860613e6c3543
