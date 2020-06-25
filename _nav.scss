@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @import 'variables';
 
@@ -36,4 +37,43 @@
             }
         }
     }
+=======
+@import 'variables';
+
+.nav {
+    @include displayNav;
+    position: fixed;
+    margin-top: 15px;
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+        position: absolute;
+        right: 15px;
+        font-size: 1.4em;
+        
+    }
+
+    .links {
+        @include displayNav;
+        list-style-type: none;
+        
+        .link {
+            padding: 10px 10px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            margin: 0px 10px;
+            transition: ease-in 0.3s;
+
+            &:hover {
+                background-color: white;
+            }
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+>>>>>>> 78173b55b7b99a506b58e5440ec860613e6c3543
 }
