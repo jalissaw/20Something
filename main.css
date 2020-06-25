@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap");
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,6 +9,7 @@
   position: fixed;
   margin-top: 15px;
   width: 100%;
+  z-index: 3;
 }
 
 .nav .logo {
@@ -28,13 +30,19 @@
 
 .nav .links .link {
   padding: 10px 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-transform: uppercase;
   margin: 0px 10px;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.nav .links .link:hover {
+  background-color: white;
 }
 
 .nav .links .link a {
-  color: black;
+  color: rgba(230, 10, 120, 0.6);
   text-decoration: none;
 }
 
@@ -55,13 +63,256 @@ main .intro {
   font-size: 1.2em;
 }
 
-main .show {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
+main .podcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+main .podcast .episode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(230, 10, 120, 0.6);
+}
+
+main .podcast .episode .episodenum {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+main .podcast .episode .episodetitle {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.7em;
+  margin-bottom: 50px;
+}
+
+main .podcast .episode .episodetitle:after {
+  content: '';
+  bottom: -10px;
+  left: 20%;
+  position: absolute;
+  height: 5px;
+  width: 250px;
+  background: white;
+}
+
+main .podcast .episode .audio {
+  width: 60%;
+}
+
+main .podcast .episode audio::-webkit-media-controls-panel {
+  background: white;
+}
+
+main .podcast .episode audio::-webkit-media-controls-play-button {
+  background-color: rgba(230, 10, 120, 0.6);
+  border-radius: 40px;
+  height: 33px;
+  width: 45px;
+}
+
+main .podcast .episode .episodedescription {
+  text-align: center;
+  max-width: 70%;
+  font-size: 1.1em;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+main .podcast .episode .episodedescription span {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: white;
+}
+
+main .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+main .newsletter .subscribetitle {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.8em;
+  color: rgba(230, 10, 120, 0.6);
+}
+
+main .newsletter .subtitle {
+  text-transform: uppercase;
+  font-size: 0.95em;
+}
+
+main .newsletter form {
+  width: 50%;
+  margin-top: 20px;
+}
+
+main .newsletter form .email {
+  text-decoration: none;
+  height: 40px;
+  width: 50%;
+  background: rgba(230, 10, 120, 0.6);
+  border: none;
+  padding-left: 8px;
+}
+
+main .newsletter form ::-webkit-input-placeholder {
+  color: white;
+}
+
+main .newsletter form :-ms-input-placeholder {
+  color: white;
+}
+
+main .newsletter form ::-ms-input-placeholder {
+  color: white;
+}
+
+main .newsletter form ::placeholder {
+  color: white;
+}
+
+main .newsletter form .btn {
+  border: solid 2px rgba(230, 10, 120, 0.6);
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+  height: 40px;
+  width: 100px;
+  color: rgba(230, 10, 120, 0.6);
+}
+
+footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+footer .socialmedia .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+footer .socialmedia .icons .icon {
+  font-size: 2.3em;
+  margin: 0px 5px;
+}
+
+footer .footercontain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .footercontain .sponsors {
+  background: pink;
+  width: 50%;
+}
+
+footer .footercontain .sponsors .sponsortitle {
+  color: white;
+}
+
+footer .footercontain .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footercontain .top .sponsor {
+  margin: 10px 5px;
+  font-size: 1.1em;
+}
+
+footer .footercontain .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footercontain .bottom .sponsor {
+  margin: 10px 5px;
+  font-size: 1.1em;
+}
+
+footer .footercontain .contact {
+  background: hotpink;
+  width: 50%;
 }
 
 * {
@@ -69,7 +320,7 @@ main .show {
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  font-family: monospace;
+  font-family: Fira Sans;
 }
 
 header {
@@ -80,6 +331,7 @@ header {
 header .draw {
   height: 100%;
   width: 100%;
+  stroke: red;
   stroke-width: 25px;
   stroke-dasharray: 6500;
   stroke-dashoffset: 6500;
@@ -100,22 +352,20 @@ header .video:before {
   content: '';
   position: absolute;
   background: url("wave.gif");
-  background-position: top;
   background-repeat: no-repeat;
+  background-position: 100%;
   background-size: cover;
   height: 100vh;
   width: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.4;
 }
 
 header .video .overlay {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #e22785), to(white));
-  background: linear-gradient(to bottom, #e22785 50%, white);
-  opacity: 0.2;
+  z-index: -1;
 }
 
 header .video .intro {
