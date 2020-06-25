@@ -5,6 +5,7 @@
     position: fixed;
     margin-top: 15px;
     width: 100%;
+    z-index: 3;
 
     .logo {
         position: absolute;
@@ -19,12 +20,17 @@
         
         .link {
             padding: 10px 10px;
-            font-size: 1.4em;
+            font-size: 1.2em;
             text-transform: uppercase;
             margin: 0px 10px;
+            transition: ease-in 0.3s;
+
+            &:hover {
+                background-color: white;
+            }
 
             a {
-                color: black;
+                color: $primary-color;
                 text-decoration: none;
             }
         }

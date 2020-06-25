@@ -1,8 +1,21 @@
-
-
+$primary-color: rgba(230, 10, 120, 0.6);
 
 
 @mixin displayNav {
     display: flex;
     align-items: center;
 }
+
+@mixin displayMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap');
+
 @import 'nav';
 @import 'content';
+@import 'footer';
 @import 'variables';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: monospace;
+    font-family: Fira Sans;
 }
 
 
@@ -17,6 +20,7 @@ header {
     .draw {
         height: 100%;
         width: 100%;
+        stroke: red;
         stroke-width: 25px;
         stroke-dasharray: 6500;
         stroke-dashoffset: 6500;
@@ -33,23 +37,22 @@ header {
         &:before {
             content: '';
             position: absolute;
-            background: url('wave.gif'),;
-            background-position: top;
+            background: url('wave.gif');
             background-repeat: no-repeat;
+            background-position: 100%;
             background-size: cover;
-            // background-position: 100% 5px;
             height: 100vh;
             width: 100%;
             z-index: -1;
-            opacity: 0.15;
+            opacity: 0.4;
         }
 
         .overlay {
             position: absolute;
             height: 100vh;
             width: 100%;
-            background: linear-gradient(to bottom, rgb(226, 39, 133) 50%, rgb(255, 255, 255));
-            opacity: 0.2;
+            // background: linear-gradient(to bottom, rgba(226, 39, 133, 0.3) 50%, rgba(255, 255, 255, 0.2));
+            z-index: -1;
         }
 
         .intro {
