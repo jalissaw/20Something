@@ -684,7 +684,11 @@ header .video:before {
   height: 100vh;
   width: 100%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0;
+  -webkit-animation: 0.5s 3s ease-in forwards;
+          animation: 0.5s 3s ease-in forwards;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
 }
 
 header .video .overlay {
@@ -711,6 +715,30 @@ header .video .intro {
   to {
     stroke-dashoffset: 0;
     stroke-dasharray: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
 /*# sourceMappingURL=main.css.map */
