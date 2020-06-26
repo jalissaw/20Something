@@ -7,27 +7,34 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  margin-top: 15px;
+  padding: 10px;
   width: 100%;
   z-index: 3;
 }
 
-.nav .logo {
-  position: absolute;
-  right: 15px;
-  font-size: 1.4em;
+@media (min-width: 641px) and (max-width: 829px) {
+  .nav {
+    display: none;
+  }
 }
 
-@media (min-width: 641px) and (max-width: 829px) {
-  .nav .logo {
+@media (min-width: 416px) and (max-width: 640px) {
+  .nav {
     display: none;
   }
 }
 
 @media (min-width: 200px) and (max-width: 415px) {
-  .nav .logo {
+  .nav {
     display: none;
   }
+}
+
+.nav .logo {
+  position: absolute;
+  right: 50px;
+  font-size: 1.4em;
+  padding: 10px;
 }
 
 .nav .links {
@@ -47,18 +54,6 @@
   margin: 0px 10px;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
-}
-
-@media (min-width: 416px) and (max-width: 640px) {
-  .nav .links .link {
-    display: none;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 415px) {
-  .nav .links .link {
-    display: none;
-  }
 }
 
 .nav .links .link a {
@@ -123,6 +118,18 @@ main .podcast .episode {
   background: rgba(230, 10, 120, 0.6);
 }
 
+main .podcast .episode .latest {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  main .podcast .episode .latest {
+    font-size: 0.9em;
+  }
+}
+
 main .podcast .episode .episodenum {
   position: absolute;
   top: 30px;
@@ -130,7 +137,14 @@ main .podcast .episode .episodenum {
   height: 40px;
   width: 100px;
   text-align: center;
-  border-radius: 40px;
+  background: white;
+  padding-top: 20px;
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  main .podcast .episode .episodenum {
+    zoom: 0.8;
+  }
 }
 
 main .podcast .episode .episodetitle {
@@ -451,6 +465,7 @@ main .newsletter form .btn:hover {
 }
 
 footer {
+  position: relative;
   background: rgba(230, 10, 120, 0.6);
   height: 50vh;
 }
@@ -491,6 +506,12 @@ footer {
   footer {
     zoom: 0.6;
     height: 80vh;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    height: 100vh;
   }
 }
 
@@ -609,26 +630,48 @@ footer .icon {
   transition: ease-in 0.4s;
 }
 
+@media (max-width: 320px) {
+  footer .icon {
+    margin: 0px 2px;
+    font-size: 25px;
+  }
+}
+
 footer .icon:hover {
-  color: white;
-  background: transparent;
-  border: solid 1px white;
-  border-radius: 50%;
+  border: solid 2px white;
 }
 
 footer .copyright {
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
   width: 100%;
+}
+
+footer .copyright .copyname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 830px) and (max-width: 1200px) {
@@ -665,7 +708,6 @@ header {
 header .draw {
   height: 100%;
   width: 100%;
-  stroke: red;
   stroke-width: 25px;
   stroke-dasharray: 6500;
   stroke-dashoffset: 6500;
@@ -690,11 +732,11 @@ header .video:before {
   background-position: 100%;
   background-size: cover;
   height: 100vh;
-  width: 100%;
+  width: 0;
   z-index: -1;
   opacity: 0;
-  -webkit-animation: 0.5s 3s ease-in forwards;
-          animation: 0.5s 3s ease-in forwards;
+  -webkit-animation: 0.5s 2.5s ease-in forwards;
+          animation: 0.5s 2.5s ease-in forwards;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
 }
@@ -729,24 +771,30 @@ header .video .intro {
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
+    width: 0%;
   }
   50% {
     opacity: 0.2;
+    width: 50%;
   }
   100% {
     opacity: 0.4;
+    width: 100%;
   }
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    width: 0%;
   }
   50% {
     opacity: 0.2;
+    width: 50%;
   }
   100% {
     opacity: 0.4;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

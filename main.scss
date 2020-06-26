@@ -21,7 +21,6 @@ header {
     .draw {
         height: 100%;
         width: 100%;
-        stroke: red;
         stroke-width: 25px;
         stroke-dasharray: 6500;
         stroke-dashoffset: 6500;
@@ -43,10 +42,10 @@ header {
             background-position: 100%;
             background-size: cover;
             height: 100vh;
-            width: 100%;
+            width: 0;
             z-index: -1;
             opacity: 0;
-            animation: 0.5s 3s ease-in forwards;
+            animation: 0.5s 2.5s ease-in forwards;
             animation-name: fadeIn;
         }
 
@@ -77,11 +76,14 @@ header {
 @keyframes fadeIn {
     0% {
        opacity: 0;
+       width: 0%;
     }
     50% {
         opacity: 0.2;
+        width: 50%;
      }
      100% {
         opacity: 0.4;
+        width: 100%;
      }
 }
