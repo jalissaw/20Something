@@ -464,6 +464,33 @@ footer {
   }
 }
 
+@media (min-width: 416px) and (max-width: 450px) {
+  footer {
+    height: 70vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  footer {
+    zoom: 0.6;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  footer {
+    zoom: 0.6;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  footer {
+    text-align: center;
+  }
+}
+
 footer .footercontain {
   display: -webkit-box;
   display: -ms-flexbox;
