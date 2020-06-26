@@ -5,6 +5,17 @@ footer {
     background: $primary-color;
     height: 50vh;
     
+    @media #{$laptops} {
+        zoom: 0.8;
+    }
+    
+    @media #{$tablets} {
+        zoom: 0.7;
+    }
+    @media #{$stablets} {
+        zoom: 0.6;
+    }
+    
     .footercontain {
         display: flex;
         justify-content: space-evenly;
@@ -30,7 +41,6 @@ footer {
 
         .contact {
             padding-top: 10px;
-          
 
             .add {
                 text-decoration: none;
@@ -68,7 +78,10 @@ footer {
     .socialmedia {
         display: flex;
         flex-direction: column;
-
+        // @media #{$stablets} {
+            
+        // }
+        
         .icons {
             display: flex;
             margin-top: 10px;
@@ -106,6 +119,17 @@ footer {
         height: 15vh;
         width: 100%;
         text-align: center;
+        @media #{$laptops} {
+            zoom: 0.9;
+        }
+        
+        @media #{$tablets} {
+            zoom: 0.8;
+        }
+        
+        @media #{$stablets} {
+            zoom: 0.8;
+        }
     }
    
 }

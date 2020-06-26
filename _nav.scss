@@ -11,6 +11,14 @@
         position: absolute;
         right: 15px;
         font-size: 1.4em;
+
+        @media #{$tablets} {
+            display: none;
+        }
+
+        @media #{$allphones} {
+            display: none;
+        }
         
     }
 
@@ -24,6 +32,13 @@
             text-transform: uppercase;
             margin: 0px 10px;
             transition: ease-in 0.3s;
+
+            @media #{$stablets} {
+                display: none;
+            }
+            @media #{$allphones} {
+                display: none;
+            }
 
             &:hover {
                 background-color: white;
