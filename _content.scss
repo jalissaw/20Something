@@ -11,8 +11,6 @@ main {
 
     .podcast {
         @include displayMain;
-        // background: linear-gradient(to bottom, rgb(255, 255, 255) 45%,rgba(226, 39, 133, 0.4));
-        // background: rgba(226, 39, 133, 0.3);
         height: 100vh;
         
         .episode {
@@ -231,6 +229,14 @@ main {
                 height: 40px;
                 width: 100px;
                 color: $primary-color;
+                transition: ease-in 0.4s ;
+
+                    &:hover {
+                        color: white;
+                        background: $primary-color;
+                        border: none;
+                        cursor: pointer;
+                    }
 
                 @media #{$laptops} {
                     margin-top: 12px;

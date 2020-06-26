@@ -36,6 +36,7 @@ footer {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        padding-top: 15px;
         
         .sponsors {
             @include displayFooter;
@@ -51,7 +52,7 @@ footer {
 
             .sponsor {
                 margin: 8px 0px;
-                font-weight: 200;
+                font-weight: 100;
             }
         }
 
@@ -68,7 +69,7 @@ footer {
                 }
 
                 .street {
-                    font-weight: 200;
+                    font-weight: 100;
                     margin-top: 8px;
                 }
 
@@ -87,17 +88,13 @@ footer {
 
     }
     .emailaddress {
-        font-weight: 200;
+        font-weight: 100;
         margin-top: 8px;
     }
 
     .socialmedia {
         display: flex;
         flex-direction: column;
-        // @media #{$stablets} {
-            
-        // }
-        
         .icons {
             display: flex;
             margin-top: 10px;
@@ -114,10 +111,8 @@ footer {
     .icon {
         font-size: 30px;
         margin: 0px 5px;
-        background: white;
         padding: 10px;
-        color: $primary-color;
-        border: solid 1px black;
+        color: black;
         transition: ease-in 0.4s;
 
         &:hover {
@@ -135,6 +130,7 @@ footer {
         height: 15vh;
         width: 100%;
         text-align: center;
+        
         @media #{$laptops} {
             zoom: 0.9;
         }
