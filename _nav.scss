@@ -106,6 +106,7 @@
 
 .menu {
     position: fixed;
+    top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +136,13 @@
 
         .menuline {
             position: absolute;
-            background: hotpink;
+            background: $primary-color;
+
+            &.changeColor {
+                background: white;
+                box-shadow: black 2px 2px 2px;
+            }
+
         }
 
         .hamburgertop {

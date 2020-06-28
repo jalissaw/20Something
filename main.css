@@ -138,6 +138,7 @@
 
 .menu {
   position: fixed;
+  top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,7 +183,13 @@
 
 .menu .menuline {
   position: absolute;
-  background: hotpink;
+  background: rgba(230, 10, 120, 0.6);
+}
+
+.menu .menuline.changeColor {
+  background: white;
+  -webkit-box-shadow: black 2px 2px 2px;
+          box-shadow: black 2px 2px 2px;
 }
 
 .menu .hamburgertop {
@@ -908,7 +915,7 @@ footer .copyright .copyname {
   text-align: center;
   background: black;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   letter-spacing: 0.5px;
   width: 100%;
   height: 100%;
