@@ -980,7 +980,7 @@ header .video {
 header .video:before {
   content: '';
   position: absolute;
-  background: url("/imgsHome/wave.gif");
+  background: url("/imgHome/wave.gif");
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
