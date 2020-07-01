@@ -412,7 +412,7 @@ main .namekrista {
 }
 
 main .nametherese {
-  background: url("../nameTH.svg");
+  background: url("../nameTh.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -422,7 +422,7 @@ main .nametherese {
 main .hostname {
   margin-top: 20px;
   padding: 10px;
-  background: pink;
+  background: rgba(230, 10, 120, 0.6);
   width: 20%;
   text-transform: uppercase;
   text-align: center;
