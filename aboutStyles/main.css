@@ -311,7 +311,6 @@
 }
 
 main {
-  height: 100vh;
   width: 100%;
 }
 
@@ -330,10 +329,9 @@ main .cohosttitle {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   text-transform: uppercase;
   font-size: 1.2em;
+  margin-bottom: 25px;
 }
 
 main .podcastintro {
@@ -351,14 +349,95 @@ main .podcastintro {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 50%;
+  height: 50vh;
+  background: rgba(230, 10, 120, 0.6);
 }
 
 main .podcastintro .cohost {
   width: 70%;
   padding: 0px 20px;
+}
+
+main .krista, main .therese {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+main .krista {
+  background: black;
+  color: white;
+}
+
+main .therese {
+  background: rgba(230, 10, 120, 0.6);
+  color: white;
+}
+
+main .pic {
+  width: 300px;
+  height: 275px;
+  border-radius: 50%;
+  border: 5px solid rgba(230, 10, 120, 0.6);
+}
+
+main .pictherese {
+  border: 5px solid black;
+}
+
+main .imagery {
+  padding: 30px 0px;
+  height: 75%;
+}
+
+main .namekrista {
+  background: url("../nameK.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+main .nametherese {
+  background: url("../nameTH.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+main .hostname {
+  margin-top: 20px;
+  padding: 10px;
+  background: pink;
+  width: 20%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+main .bio {
+  text-align: center;
+  line-height: 25px;
+  width: 75%;
+  height: 50%;
+}
+
+main .theresebio {
+  color: black;
 }
 
 * {
