@@ -26,6 +26,15 @@ main {
         .cohost {
             width: 70%;
             padding: 0px 20px;
+            @media #{$lphones} {
+                font-size: 0.95em;
+            }
+            @media #{$mphones} {
+                font-size: 0.9em;
+            }
+            @media #{$sphones} {
+                font-size: 0.8em;
+            }
         }
     }
 
@@ -54,6 +63,32 @@ main {
         height: 275px;
         border-radius: 50%;
         border: 5px solid $primary-color;
+
+        @media #{$tablets} {
+            margin-top: 20px;
+            height: 250px;
+            width: 275px;
+        }
+        @media #{$stablets} {
+            margin-top: 20px;
+            height: 200px;
+            width: 225px;
+        }
+
+        @media #{$lphones} {
+            margin-top: 20px;
+            height: 200px;
+            width: 225px;
+        }
+        @media #{$mphones} {
+            margin-top: 20px;
+            height: 190px;
+            width: 200px;
+        }
+        @media #{$sphones} {
+            height: 170px;
+            width: 180px;
+        }
     }
 
     .pictherese {
@@ -81,10 +116,6 @@ main {
         width: 100%; 
     }
 
-    .namefill {
-        stroke-width: 100px;
-    }
-
     .hostname {
         margin-top: 20px;
         padding: 10px;
@@ -95,11 +126,38 @@ main {
         font-size: 1.3em;
     }
 
+    .hostnametherese {
+        @media #{$allphones} {
+            padding-right: 25px;
+        }
+    }
+
     .bio {
         text-align: center;
         line-height: 25px;
         width: 75%;
         height: 50%;
+        
+        @media #{$lphones} {
+            line-height: 20px;
+            width: 75%;
+            height: 100%;
+            font-size: 0.9em;
+        }
+        @media #{$mphones} {
+            line-height: 18px;
+            width: 75%;
+            height: 100%;
+            font-size: 0.85em;
+        }
+        @media #{$sphones} {
+            line-height: 18px;
+            width: 75%;
+            height: 100%;
+            font-size: 0.75em;
+            padding-bottom: 10px;
+        }
+        
     }
 
     .theresebio {

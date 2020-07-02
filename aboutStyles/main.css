@@ -359,6 +359,24 @@ main .podcastintro .cohost {
   padding: 0px 20px;
 }
 
+@media (min-width: 375px) and (max-width: 415px) {
+  main .podcastintro .cohost {
+    font-size: 0.95em;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  main .podcastintro .cohost {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 320px) {
+  main .podcastintro .cohost {
+    font-size: 0.8em;
+  }
+}
+
 main .krista, main .therese {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,6 +413,45 @@ main .pic {
   border: 5px solid rgba(230, 10, 120, 0.6);
 }
 
+@media (min-width: 641px) and (max-width: 829px) {
+  main .pic {
+    margin-top: 20px;
+    height: 250px;
+    width: 275px;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 640px) {
+  main .pic {
+    margin-top: 20px;
+    height: 200px;
+    width: 225px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  main .pic {
+    margin-top: 20px;
+    height: 200px;
+    width: 225px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  main .pic {
+    margin-top: 20px;
+    height: 190px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  main .pic {
+    height: 170px;
+    width: 180px;
+  }
+}
+
 main .pictherese {
   border: 5px solid black;
 }
@@ -420,10 +477,6 @@ main .nametherese {
   width: 100%;
 }
 
-main .namefill {
-  stroke-width: 100px;
-}
-
 main .hostname {
   margin-top: 20px;
   padding: 10px;
@@ -434,11 +487,45 @@ main .hostname {
   font-size: 1.3em;
 }
 
+@media (min-width: 200px) and (max-width: 415px) {
+  main .hostnametherese {
+    padding-right: 25px;
+  }
+}
+
 main .bio {
   text-align: center;
   line-height: 25px;
   width: 75%;
   height: 50%;
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  main .bio {
+    line-height: 20px;
+    width: 75%;
+    height: 100%;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  main .bio {
+    line-height: 18px;
+    width: 75%;
+    height: 100%;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 320px) {
+  main .bio {
+    line-height: 18px;
+    width: 75%;
+    height: 100%;
+    font-size: 0.75em;
+    padding-bottom: 10px;
+  }
 }
 
 main .theresebio {
