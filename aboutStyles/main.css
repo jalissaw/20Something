@@ -397,7 +397,7 @@ main .krista, main .therese {
 }
 
 main .krista {
-  background: black;
+  background: #1f1f1f;
   color: white;
 }
 
@@ -411,6 +411,7 @@ main .pic {
   height: 275px;
   border-radius: 50%;
   border: 5px solid hotpink;
+  background: white;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -453,7 +454,7 @@ main .pic {
 }
 
 main .pictherese {
-  border: 5px solid black;
+  border: 5px solid #1f1f1f;
 }
 
 main .imagery {
@@ -529,7 +530,7 @@ main .bio {
 }
 
 main .theresebio {
-  color: black;
+  color: #1f1f1f;
 }
 
 main .showabout {
@@ -601,7 +602,7 @@ header .video {
 header .video .overlay {
   height: 100vh;
   width: 100%;
-  background: rgba(230, 10, 120, 0.6);
+  background: #1f1f1f;
   opacity: 0.3;
   position: absolute;
   top: 0;

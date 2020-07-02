@@ -48,7 +48,7 @@ main {
     }
 
     .krista {
-        background: black;
+        background: rgb(31, 31, 31);
         color: white;
     }
 
@@ -62,6 +62,7 @@ main {
         height: 275px;
         border-radius: 50%;
         border: 5px solid hotpink;
+        background: white;
 
         @media #{$tablets} {
             margin-top: 20px;
@@ -91,7 +92,7 @@ main {
     }
 
     .pictherese {
-        border: 5px solid black;
+        border: 5px solid rgb(31, 31, 31);
     }
 
     .imagery {
@@ -160,7 +161,7 @@ main {
     }
 
     .theresebio {
-        color: black;
+        color: rgb(31, 31, 31);
     }
 
     .showabout {
