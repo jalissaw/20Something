@@ -10,32 +10,29 @@ const epiDescription = document.querySelector('.episodedescription')
 
 const xhr = new XMLHttpRequest();
 
+
+
 xhr.onload = function () {
     const episodes = JSON.parse(this.responseText);
     let i = 1
     arrowRight.addEventListener('click', () => {
-        function episodeNumber() {
-            if (i < episodes.length) {
-                epiNum.innerHTML = `Episode ${episodes[i].episode}`
-                epiTitle.innerHTML = `${episodes[i].title}`;
-                epiDescription.innerHTML = `${episodes[i].description}`;
-                i++
-                console.log(i)
-                console.log(episodes[i].episode)
-                console.log(episodes[i].title)
-            } else episodeNumberLeft()
-
+        if (i < episodes.length) {
+            epiNum.innerHTML = `Episode ${episodes[i].episode}`
+            epiTitle.innerHTML = `${episodes[i].title}`;
+            epiDescription.innerHTML = `${episodes[i].description}`;
+            i++
 
         }
-        episodeNumber()
     })
     arrowLeft.addEventListener('click', () => {
-        function episodeNumberLeft() {
-            console.log('clicked')
+        if (i <= episodes.length) {
+            i--
+            epiNum.innerHTML = `Episode ${episodes[i].episode}`;
+            epiTitle.innerHTML = `${episodes[i].title}`;
+            epiDescription.innerHTML = `${episodes[i].description}`;
+            console.log(i)
+        } else i = 0;
 
-
-        }
-        episodeNumberLeft()
     })
 }
 
