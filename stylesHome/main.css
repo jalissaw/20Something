@@ -340,6 +340,7 @@ main .podcast {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   height: 100vh;
 }
 
@@ -548,6 +549,47 @@ main .podcast .episode .episodedescription span {
   font-size: 1.2em;
   text-transform: uppercase;
   color: white;
+}
+
+main .podcast .fas {
+  position: absolute;
+  bottom: 50px;
+  font-size: 30px;
+}
+
+main .podcast .fas:hover {
+  cursor: pointer;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main .podcast .fa-chevron-left {
+  left: 100px;
+}
+
+main .podcast .fa-chevron-right {
+  right: 100px;
+}
+
+main .podcast .toggle {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+main .podcast .toggle:hover {
+  cursor: pointer;
+}
+
+main .podcast .right {
+  left: 0px;
+}
+
+main .podcast .left {
+  right: 0px;
 }
 
 main .newsletter {
