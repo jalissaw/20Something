@@ -651,14 +651,13 @@ main .newsletter .subscribetitle {
 
 @media (min-width: 200px) and (max-width: 415px) {
   main .newsletter .subscribetitle {
-    font-size: 1.1em;
+    font-size: 0.95em;
   }
 }
 
 main .newsletter .subtitle {
   text-transform: uppercase;
   font-size: 0.95em;
-  padding: 0px 20px;
 }
 
 @media (min-width: 416px) and (max-width: 640px) {
@@ -670,44 +669,39 @@ main .newsletter .subtitle {
 @media (min-width: 200px) and (max-width: 415px) {
   main .newsletter .subtitle {
     font-size: 0.6em;
+    width: 50%;
   }
 }
 
 main .newsletter form {
-  width: 50%;
+  width: 100%;
   margin-top: 20px;
 }
 
 main .newsletter form .email {
   text-decoration: none;
   height: 40px;
-  width: 50%;
+  width: 30%;
   background: rgba(230, 10, 120, 0.6);
   border: none;
   padding-left: 8px;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
-  main .newsletter form .email {
-    width: 80%;
-  }
-}
-
 @media (min-width: 641px) and (max-width: 829px) {
   main .newsletter form .email {
-    width: 100%;
+    width: 45%;
   }
 }
 
 @media (min-width: 416px) and (max-width: 640px) {
   main .newsletter form .email {
-    width: 100%;
+    width: 50%;
   }
 }
 
 @media (min-width: 200px) and (max-width: 415px) {
   main .newsletter form .email {
-    width: 100%;
+    width: 70%;
   }
 }
 
@@ -733,7 +727,7 @@ main .newsletter form .btn {
   background: transparent;
   text-transform: uppercase;
   height: 40px;
-  width: 100px;
+  width: 10%;
   color: rgba(230, 10, 120, 0.6);
   -webkit-transition: ease-in 0.4s;
   transition: ease-in 0.4s;
@@ -746,31 +740,22 @@ main .newsletter form .btn:hover {
   cursor: pointer;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
-  main .newsletter form .btn {
-    margin-top: 12px;
-    width: 250px;
-  }
-}
-
 @media (min-width: 641px) and (max-width: 829px) {
   main .newsletter form .btn {
-    margin-top: 12px;
-    width: 225px;
+    width: 15%;
   }
 }
 
 @media (min-width: 416px) and (max-width: 640px) {
   main .newsletter form .btn {
-    margin-top: 12px;
-    width: 200px;
+    width: 20%;
   }
 }
 
 @media (min-width: 200px) and (max-width: 415px) {
   main .newsletter form .btn {
     margin-top: 12px;
-    width: 150px;
+    width: 72%;
   }
 }
 

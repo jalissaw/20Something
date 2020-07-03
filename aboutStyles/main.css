@@ -695,6 +695,242 @@ main .showabout .hottopics {
   text-overflow: initial;
 }
 
+footer {
+  position: relative;
+  background: rgba(230, 10, 120, 0.6);
+  height: 50vh;
+}
+
+@media (min-width: 830px) and (max-width: 1200px) {
+  footer {
+    zoom: 0.8;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 829px) {
+  footer {
+    zoom: 0.7;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 640px) {
+  footer {
+    zoom: 0.6;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 450px) {
+  footer {
+    height: 70vh;
+    text-align: center;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 415px) {
+  footer {
+    zoom: 0.6;
+    height: 70vh;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  footer {
+    zoom: 0.6;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 320px) {
+  footer {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  footer {
+    text-align: center;
+  }
+}
+
+footer .footercontain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
+}
+
+footer .footercontain .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10px;
+}
+
+footer .footercontain .sponsors .sponsortitle {
+  color: white;
+  margin-left: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .footercontain .sponsors .sponsor {
+  margin: 8px 0px;
+  font-weight: 100;
+}
+
+footer .footercontain .contact {
+  padding-top: 10px;
+}
+
+footer .footercontain .contact .add {
+  text-decoration: none;
+}
+
+footer .footercontain .contact .add .address {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .footercontain .contact .add .street {
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+footer .footercontain .contact .add .po {
+  margin: 3px 0px;
+}
+
+footer .emailfooter {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+footer .emailaddress {
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .socialmedia .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+footer .socialtitle {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+footer .icon {
+  font-size: 30px;
+  margin: 0px 5px;
+  padding: 10px;
+  color: #1f1f1f;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
+}
+
+@media (max-width: 320px) {
+  footer .icon {
+    margin: 0px 2px;
+    font-size: 25px;
+  }
+}
+
+footer .icon:hover {
+  border: solid 2px white;
+}
+
+footer .copyright {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12vh;
+  width: 100%;
+}
+
+footer .copyright .copyname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #1f1f1f;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 320px) {
+  footer .copyright .copyname {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 830px) and (max-width: 1200px) {
+  footer .copyright {
+    zoom: 0.9;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 829px) {
+  footer .copyright {
+    zoom: 0.8;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 640px) {
+  footer .copyright {
+    zoom: 0.8;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

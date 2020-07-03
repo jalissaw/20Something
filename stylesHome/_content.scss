@@ -244,47 +244,44 @@ main {
                 font-size: 1.2em;
             }
             @media #{$allphones} {
-                font-size: 1.1em;
+                font-size: 0.95em;
             }
         }
 
         .subtitle {
             text-transform: uppercase;
             font-size: 0.95em;
-            padding: 0px 20px;
+            // padding: 0px 20px;
 
             @media #{$stablets} {
                 font-size: 0.7em;
             }
             @media #{$allphones} {
                 font-size: 0.6em;
+                width: 50%;
             }
         }
 
         form {
-            width: 50%;
+            width: 100%;
             margin-top: 20px;
 
             .email {
                 text-decoration: none;
                 height: 40px;
-                width: 50%;
+                width: 30%;
                 background: $primary-color;
                 border: none;
                 padding-left: 8px;
-
-                @media #{$laptops} {
-                    width: 80%;
-                }
                 
                 @media #{$tablets} {
-                    width: 100%;
+                    width: 45%;
                 }
                 @media #{$stablets} {
-                    width: 100%;
+                    width: 50%;
                 }
                 @media #{$allphones} {
-                    width: 100%;
+                    width: 70%;
                 }
             }
 
@@ -298,7 +295,7 @@ main {
                 background: transparent;
                 text-transform: uppercase;
                 height: 40px;
-                width: 100px;
+                width: 10%;
                 color: $primary-color;
                 transition: ease-in 0.4s ;
 
@@ -308,23 +305,17 @@ main {
                         border: none;
                         cursor: pointer;
                     }
-
-                @media #{$laptops} {
-                    margin-top: 12px;
-                    width: 250px;
-                }
                 
                 @media #{$tablets} {
-                    margin-top: 12px;
-                    width: 225px;
+                    width: 15%;
                 }
                 @media #{$stablets} {
-                    margin-top: 12px;
-                    width: 200px;
+                    
+                    width: 20%;
                 }
                 @media #{$allphones} {
                     margin-top: 12px;
-                    width: 150px;
+                    width: 72%;
                 }
             }
         }
