@@ -394,16 +394,20 @@ main .krista, main .therese {
   text-align: center;
   height: 100vh;
   width: 100%;
+  z-index: 1;
 }
 
 main .krista {
   background: #1f1f1f;
   color: white;
+  position: relative;
 }
 
 main .therese {
   background: rgba(230, 10, 120, 0.6);
   color: white;
+  overflow: hidden;
+  position: relative;
 }
 
 main .pic {
@@ -412,6 +416,7 @@ main .pic {
   border-radius: 50%;
   border: 5px solid hotpink;
   background: white;
+  z-index: 3;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -463,19 +468,47 @@ main .imagery {
 }
 
 main .namekrista {
-  background: url("../nameK.svg");
+  background: url("../imgAbout/nameK.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   width: 100%;
 }
 
+main .namekrista:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10%;
+  background: url("../imgAbout/picK.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  opacity: 0.25;
+  z-index: -1;
+}
+
 main .nametherese {
-  background: url("../nameTh.svg");
+  background: url("../imgAbout/nameTh.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   width: 100%;
+}
+
+main .nametherese:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10%;
+  background: url("../imgAbout/picTh.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  opacity: 0.25;
+  z-index: -1;
 }
 
 main .hostname {
@@ -496,8 +529,8 @@ main .hostname {
 
 main .bio {
   text-align: center;
-  line-height: 25px;
-  width: 75%;
+  line-height: 30px;
+  width: 80%;
   height: 50%;
 }
 
@@ -592,7 +625,7 @@ header {
 header .video {
   width: 100%;
   height: 100%;
-  background: url("../intro.gif");
+  background: url("../imgAbout/intro.gif");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 100%;

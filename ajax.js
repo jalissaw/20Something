@@ -10,14 +10,12 @@ const epiDescription = document.querySelector('.episodedescription')
 
 const xhr = new XMLHttpRequest();
 
-
-
 xhr.onload = function () {
     const episodes = JSON.parse(this.responseText);
 
     let i = 0
     // on load left arrow is not appearing
-    if (i === 0) { chevronLeft.classList.add('disappear') }
+    chevronLeft.classList.add('disappear');
 
     arrowRight.addEventListener('click', () => {
         // on click numerate through podcast episode by clicking right

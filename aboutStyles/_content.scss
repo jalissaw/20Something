@@ -45,16 +45,21 @@ main {
         text-align: center;
         height: 100vh;
         width: 100%;
+        z-index: 1;
     }
 
     .krista {
         background: rgb(31, 31, 31);
         color: white;
+        position: relative;
     }
 
     .therese {
         background: $primary-color;
         color: white;
+        overflow: hidden;
+        position: relative;
+        
     }
 
     .pic {
@@ -63,6 +68,7 @@ main {
         border-radius: 50%;
         border: 5px solid hotpink;
         background: white;
+        z-index: 3;
 
         @media #{$tablets} {
             margin-top: 20px;
@@ -101,19 +107,46 @@ main {
     }
 
     .namekrista {
-        background: url('../nameK.svg');
+        background: url('../imgAbout/nameK.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: fixed;
         width: 100%; 
         
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10%;
+            background: url('../imgAbout/picK.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 50%;
+            opacity: 0.25;
+            z-index: -1;
+        }
     }
     .nametherese {
-        background: url('../nameTh.svg');
+        background: url('../imgAbout/nameTh.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: fixed;
         width: 100%; 
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -10%;
+            background: url('../imgAbout/picTh.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 50%;
+            opacity: 0.25;
+            z-index: -1;
+        }
     }
 
     .hostname {
@@ -134,8 +167,8 @@ main {
 
     .bio {
         text-align: center;
-        line-height: 25px;
-        width: 75%;
+        line-height: 30px;
+        width: 80%;
         height: 50%;
         
         @media #{$lphones} {
