@@ -118,7 +118,7 @@ footer {
         font-size: 30px;
         margin: 0px 5px;
         padding: 10px;
-        color: black;
+        color: $secondary-color;
         transition: ease-in 0.4s;
 
         @media #{$sphones} {
@@ -146,7 +146,7 @@ footer {
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: black;
+            background: $secondary-color;
             color: white;
             font-size: 1.1em;
             letter-spacing: 0.5px;

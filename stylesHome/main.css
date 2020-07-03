@@ -361,6 +361,7 @@ main .podcast .episode {
   position: relative;
   height: 100%;
   width: 100%;
+  color: #1f1f1f;
   background: rgba(230, 10, 120, 0.6);
 }
 
@@ -379,11 +380,12 @@ main .podcast .episode .latest {
 main .podcast .episode .episodenum {
   position: absolute;
   top: 30px;
-  left: 10px;
+  right: 50px;
   height: 40px;
   width: 100px;
   text-align: center;
-  background: white;
+  background: #1f1f1f;
+  color: white;
   padding-top: 20px;
 }
 
@@ -400,6 +402,7 @@ main .podcast .episode .episodetitle {
   font-size: 1.6em;
   margin-bottom: 50px;
   padding: 0px 30px;
+  color: #1f1f1f;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -552,14 +555,29 @@ main .podcast .episode .episodedescription span {
 }
 
 main .podcast .fas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 50px;
   font-size: 30px;
+  padding: 10px 15px;
+  background: #1f1f1f;
+  color: white;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 main .podcast .fas:hover {
   cursor: pointer;
-  color: white;
+  background: white;
+  color: #1f1f1f;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -568,14 +586,23 @@ main .podcast .fa-chevron-left {
   left: 100px;
 }
 
+main .podcast .fa-chevron-left.disappear {
+  display: none;
+}
+
 main .podcast .fa-chevron-right {
   right: 100px;
 }
 
+main .podcast .fa-chevron-right.disappear {
+  display: none;
+}
+
 main .podcast .toggle {
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
   position: absolute;
+  top: 5%;
   opacity: 0;
   z-index: 2;
 }
@@ -585,11 +612,7 @@ main .podcast .toggle:hover {
 }
 
 main .podcast .right {
-  left: 0px;
-}
-
-main .podcast .left {
-  right: 0px;
+  right: 5%;
 }
 
 main .newsletter {
@@ -718,7 +741,7 @@ main .newsletter form .btn {
 
 main .newsletter form .btn:hover {
   color: white;
-  background: rgba(230, 10, 120, 0.6);
+  background: #1f1f1f;
   border: none;
   cursor: pointer;
 }
@@ -912,7 +935,7 @@ footer .icon {
   font-size: 30px;
   margin: 0px 5px;
   padding: 10px;
-  color: black;
+  color: #1f1f1f;
   -webkit-transition: ease-in 0.4s;
   transition: ease-in 0.4s;
 }
@@ -955,7 +978,7 @@ footer .copyright .copyname {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background: black;
+  background: #1f1f1f;
   color: white;
   font-size: 1.1em;
   letter-spacing: 0.5px;
@@ -1029,7 +1052,6 @@ header .video:before {
   height: 100vh;
   width: 0;
   z-index: -1;
-  opacity: 0;
   -webkit-animation: 0.5s 2.5s ease-in forwards;
           animation: 0.5s 2.5s ease-in forwards;
   -webkit-animation-name: fadeIn;
@@ -1073,7 +1095,7 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.4;
+    opacity: 0.5;
     width: 100%;
   }
 }
@@ -1088,8 +1110,38 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.4;
+    opacity: 0.5;
     width: 100%;
+  }
+}
+
+@-webkit-keyframes updown {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  50% {
+    opacity: 0.2;
+    height: 50%;
+  }
+  100% {
+    opacity: 0.4;
+    height: 100%;
+  }
+}
+
+@keyframes updown {
+  0% {
+    opacity: 0;
+    height: 0%;
+  }
+  50% {
+    opacity: 0.2;
+    height: 50%;
+  }
+  100% {
+    opacity: 0.4;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

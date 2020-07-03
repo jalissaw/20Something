@@ -14,24 +14,47 @@ const xhr = new XMLHttpRequest();
 
 xhr.onload = function () {
     const episodes = JSON.parse(this.responseText);
-    let i = 1
+
+    let i = 0
+    // on load left arrow is not appearing
+    if (i === 0) { chevronLeft.classList.add('disappear') }
+
     arrowRight.addEventListener('click', () => {
-        if (i < episodes.length) {
+        // on click numerate through podcast episode by clicking right
+        if (i < episodes.length - 1) {
+            i++
             epiNum.innerHTML = `Episode ${episodes[i].episode}`
             epiTitle.innerHTML = `${episodes[i].title}`;
             epiDescription.innerHTML = `${episodes[i].description}`;
-            i++
+            console.log(i)
+            console.log(episodes.length)
+        }
+        // make right arrow disappear when you get to the end of the list
+        if (i === episodes.length - 1) {
+            chevronRight.classList.add('disappear')
+        }
 
+        if (i >= 1) {
+            chevronLeft.classList.remove('disappear')
         }
     })
+
+    // on click numerate through podcast episode by clicking left
     arrowLeft.addEventListener('click', () => {
-        if (i <= episodes.length) {
+        if (i) {
             i--
             epiNum.innerHTML = `Episode ${episodes[i].episode}`;
             epiTitle.innerHTML = `${episodes[i].title}`;
             epiDescription.innerHTML = `${episodes[i].description}`;
             console.log(i)
-        } else i = 0;
+        }
+        // make right arrow reappear on click
+        if (i !== episodes.length - 1) {
+            chevronRight.classList.remove('disappear')
+        } // make left arrow disappear at the end of the list
+        if (i === 0) {
+            chevronLeft.classList.add('disappear')
+        }
 
     })
 }

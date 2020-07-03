@@ -39,7 +39,7 @@ window.addEventListener('scroll', function () {
 
 
     if (screenPosition < position) {
-        nav.style.background = 'black';
+        nav.style.background = 'rgb(31, 31, 31)';
         logo.style.background = 'rgba(230, 10, 120, 0.6)';
     } else {
         nav.style.background = 'transparent';
@@ -61,8 +61,10 @@ for (var i = 0; i < hamburger.length; i++) {
     // hamburger[i].style.background = 'white';
 }
 
+
 // let myAnimation = anime({
 //     targets: 'main',
-//     translateX: 500,
-//     borderRadius: 50
+//     opacity: 0.4,
+//     borderRadius: 50,
+//     transition: 500
 // })
