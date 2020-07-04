@@ -3,10 +3,11 @@
 .nav {
     
     @include displayNav;
-    position: fixed;
-    padding: 10px;
+    height: 10vh;
+    // padding: 10px;
     width: 100%;
     z-index: 3;
+    overflow: hidden;
     @media #{$tablets} {
         display: none;
     }
@@ -23,9 +24,7 @@
         right: 50px;
         font-size: 1.4em;
         padding: 10px;
-        background: $secondary-color;
         color: $primary-color;
-        
     }
 
     .links {

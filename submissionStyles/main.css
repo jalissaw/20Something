@@ -6,10 +6,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
-  padding: 10px;
+  height: 10vh;
   width: 100%;
   z-index: 3;
+  overflow: hidden;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -35,7 +35,6 @@
   right: 50px;
   font-size: 1.4em;
   padding: 10px;
-  background: #1f1f1f;
   color: rgba(230, 10, 120, 0.6);
 }
 
@@ -323,6 +322,10 @@
 header {
   height: 100vh;
   width: 100%;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(85%), color-stop(15%, #1f1f1f));
+  background-image: linear-gradient(90deg, white, 85%, #1f1f1f 15%);
 }
 
 header .submit {
@@ -336,46 +339,68 @@ header .submit {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 90vh;
   width: 100%;
-  background-image: linear-gradient(130deg, #1f1f1f, 50%, white 50%);
 }
 
 header .submit .submitcontain {
-  padding: 100px 0px;
-  height: 40%;
-  width: 50%;
-  border: white 10px solid;
-  background: rgba(230, 10, 120, 0.6);
+  height: 90vh;
+  z-index: 1;
   position: relative;
 }
 
 header .submit .submitcontain .submittitle {
   font-size: 2.5em;
   text-transform: uppercase;
-  color: white;
+  color: rgba(230, 10, 120, 0.6);
   padding: 20px;
-  background: rgba(230, 10, 120, 0.6);
 }
 
 header .submit .submitcontain .infosubmit {
   margin: 0 auto;
-  width: 75%;
+  width: 60%;
+  padding-top: 5px;
   font-size: 1.2em;
   line-height: 25px;
+  color: #1f1f1f;
 }
 
 header .submit .submitcontain .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
-  left: 15px;
-  bottom: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 5%;
+  right: 50px;
 }
 
 header .submit .submitcontain .icons .icon {
-  background: white;
-  padding: 8px 8px;
-  color: #1f1f1f;
+  padding: 20px;
+  color: white;
   font-size: 1.5em;
+  margin: 8px 0px;
+  width: 30px;
+  height: 30px;
+  background: rgba(230, 10, 120, 0.6);
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+header .submit .submitcontain .icons .icon:hover {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 
 header .submit .forminfo {
@@ -386,14 +411,10 @@ header .submit .forminfo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
-  width: 40%;
+  width: 100%;
 }
 
 header .submit .forminfo .form {
@@ -410,60 +431,63 @@ header .submit .forminfo .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80%;
-  width: 80%;
+  height: 60%;
+  width: 45%;
+  margin-top: 20px;
 }
 
 header .submit .forminfo .form .finput {
-  height: 35px;
-  width: 70%;
-  background: transparent;
-  border: none;
-  border-bottom: #1f1f1f 2px solid;
+  height: 40px;
+  width: 90%;
+  padding-left: 10px;
+  background: rgba(230, 10, 120, 0.6);
+  border: #1f1f1f 1px solid;
 }
 
 header .submit .forminfo .form ::-webkit-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
-  font-size: 1.1em;
+  color: #1f1f1f;
+  font-size: 1.2em;
 }
 
 header .submit .forminfo .form :-ms-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
-  font-size: 1.1em;
+  color: #1f1f1f;
+  font-size: 1.2em;
 }
 
 header .submit .forminfo .form ::-ms-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
-  font-size: 1.1em;
+  color: #1f1f1f;
+  font-size: 1.2em;
 }
 
 header .submit .forminfo .form ::placeholder {
-  color: rgba(230, 10, 120, 0.6);
-  font-size: 1.1em;
+  color: #1f1f1f;
+  font-size: 1.2em;
 }
 
 header .submit .forminfo .form .email {
-  margin: 20px 0px;
+  margin: 12px 0px;
 }
 
 header .submit .forminfo .form .message {
-  margin: 10px 0px;
-  background: transparent;
+  background: rgba(230, 10, 120, 0.6);
   border: 2px solid #1f1f1f;
-  width: 70%;
+  width: 90%;
   resize: vertical;
+  padding-left: 10px;
+  padding-top: 5px;
+  border: #1f1f1f 1px solid;
 }
 
 header .submit .forminfo .form .btn {
-  margin-top: 10px;
+  margin-top: 12px;
   color: rgba(230, 10, 120, 0.6);
   background: #1f1f1f;
   text-transform: uppercase;
-  border: rgba(230, 10, 120, 0.6) 1.5px solid;
-  width: 70%;
-  height: 40px;
+  border: white 1.5px solid;
+  width: 92%;
+  height: 50px;
   font-size: 1.3em;
-  -webkit-box-shadow: 2px 2px 2px rgba(230, 10, 120, 0.6);
-          box-shadow: 2px 2px 2px rgba(230, 10, 120, 0.6);
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 /*# sourceMappingURL=main.css.map */
