@@ -334,27 +334,49 @@ header .submit {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 90%;
+  height: 100%;
   width: 100%;
-  background: transparent;
-  -webkit-box-shadow: #1f1f1f 2px 2px 5px;
-          box-shadow: #1f1f1f 2px 2px 5px;
+  background-image: linear-gradient(130deg, #1f1f1f, 50%, white 50%);
 }
 
 header .submit .submitcontain {
+  padding: 100px 0px;
+  height: 40%;
   width: 50%;
+  border: white 10px solid;
+  background: rgba(230, 10, 120, 0.6);
+  position: relative;
 }
 
-header .submittitle {
-  font-size: 3em;
+header .submit .submitcontain .submittitle {
+  font-size: 2.5em;
   text-transform: uppercase;
+  color: white;
+  padding: 20px;
+  background: rgba(230, 10, 120, 0.6);
 }
 
-header .infosubmit {
-  width: 60%;
+header .submit .submitcontain .infosubmit {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1.2em;
+  line-height: 25px;
 }
 
-header .form {
+header .submit .submitcontain .icons {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+header .submit .submitcontain .icons .icon {
+  background: white;
+  padding: 8px 8px;
+  color: #1f1f1f;
+  font-size: 1.5em;
+}
+
+header .submit .forminfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,35 +390,75 @@ header .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #1f1f1f;
-  background: #1f1f1f;
+  height: 100%;
+  width: 40%;
 }
 
-header .form .finput {
-  height: 40px;
-  width: 45%;
+header .submit .forminfo .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  width: 80%;
+}
+
+header .submit .forminfo .form .finput {
+  height: 35px;
+  width: 70%;
   background: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
+  border: none;
+  border-bottom: rgba(230, 10, 120, 0.6) 2px solid;
 }
 
-header .form .email {
-  margin-top: 10px;
-  margin-bottom: 10px;
+header .submit .forminfo .form ::-webkit-input-placeholder {
+  color: #1f1f1f;
+  font-size: 1.1em;
 }
 
-header .form .message {
-  width: 45%;
+header .submit .forminfo .form :-ms-input-placeholder {
+  color: #1f1f1f;
+  font-size: 1.1em;
+}
+
+header .submit .forminfo .form ::-ms-input-placeholder {
+  color: #1f1f1f;
+  font-size: 1.1em;
+}
+
+header .submit .forminfo .form ::placeholder {
+  color: #1f1f1f;
+  font-size: 1.1em;
+}
+
+header .submit .forminfo .form .email {
+  margin: 10px 0px;
+}
+
+header .submit .forminfo .form .message {
+  margin: 10px 0px;
+  background: transparent;
+  border: 2px solid rgba(230, 10, 120, 0.6);
+  width: 70%;
   resize: vertical;
-  margin-bottom: 10px;
-  background: transparent;
 }
 
-header .form .btn {
+header .submit .forminfo .form .btn {
+  color: rgba(230, 10, 120, 0.6);
+  background: #1f1f1f;
   text-transform: uppercase;
-  background: transparent;
-  width: 45%;
+  border: none;
+  width: 70%;
   height: 40px;
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=main.css.map */

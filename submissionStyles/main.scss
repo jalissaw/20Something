@@ -21,64 +21,101 @@ header {
         justify-content: center;
         align-items: center;
         text-align: center;
-        height: 90%;
+        height: 100%;
         width: 100%;
-        background: transparent;
-        box-shadow: $secondary-color 2px 2px 5px;
+        background-image: linear-gradient(130deg, $secondary-color, 50%, white 50%);
 
         .submitcontain {
+            padding: 100px 0px;
+            height: 40%;
             width: 50%;
-        }
-    }
+            border: white 10px solid;
+            // border-radius: 40px;
+            background: $primary-color;
+            position: relative;
 
-    .submittitle {
-        font-size: 3em;
-        text-transform: uppercase;
-    }
+            .submittitle {
+                font-size: 2.5em;
+                text-transform: uppercase;
+                color: white;
+                padding: 20px;
+                background: $primary-color;
+            }
 
-    .infosubmit {
-        width: 60%;
-    }
+            .infosubmit {
+                margin: 0 auto;
+                width: 75%;
+                font-size: 1.2em;
+                line-height: 25px;
+                // text-shadow: 20px 0.1px 5px $secondary-color;
+            }
 
-    .form {
-        // position: absolute;
-        // top: 20%;
-        // left: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // height: 70%;
-        // width: 50%;
-        border: 2px solid $secondary-color;
-        background: $secondary-color;
-
-        .finput {
-            height: 40px;
-            width: 45%;
-            background: transparent;
-            border-top: none;
-            border-right: none;
-            border-left: none;
-        }
-
-        .email {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            .icons {
+                position: absolute;
+                left: 15px;
+                bottom: 15px;
+                
+                .icon {
+                    background: white;
+                    padding: 8px 8px;
+                    color: $secondary-color;
+                    font-size: 1.5em;
+                }
+            }
         }
 
-        .message {
-            width: 45%;
-            resize: vertical;
-            margin-bottom: 10px;
-            background: transparent;
-        }
+        .forminfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 40%;
 
-        .btn {
-            text-transform: uppercase;
-            background: transparent;
-            width: 45%;
-            height: 40px;
+            .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 80%;
+                width: 80%;
+                // background: $secondary-color;
+
+                .finput {
+                    height: 35px;
+                    width: 70%;
+                    background: transparent;
+                    border: none;
+                    border-bottom: $primary-color 2px solid;
+                }
+
+                ::placeholder {
+                    color: $secondary-color;
+                    font-size: 1.1em;
+                }
+
+                .email {
+                    margin: 10px 0px;
+                }
+
+                .message {
+                    margin: 10px 0px;
+                    background: transparent;
+                    border: 2px solid $primary-color;
+                    width: 70%;
+                    resize: vertical;
+                }
+
+                .btn {
+                    color: $primary-color;
+                    background: $secondary-color;
+                    text-transform: uppercase;
+                    border: none;
+                    width: 70%;
+                    height: 40px;
+                    font-size: 1.3em;
+                }
+            }
         }
     }
 }
