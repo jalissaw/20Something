@@ -57,7 +57,7 @@
 }
 
 .nav .links .link a {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   text-decoration: none;
 }
 
@@ -183,7 +183,7 @@
 
 .menu .menuline {
   position: absolute;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 .menu .menuline.changeColor {
@@ -369,7 +369,7 @@ main .podcastintro {
           align-items: center;
   text-align: center;
   height: 50vh;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 main .podcastintro .cohost {
@@ -428,7 +428,7 @@ main .krista {
 }
 
 main .therese {
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   color: white;
   overflow: hidden;
   position: relative;
@@ -438,7 +438,7 @@ main .pic {
   width: 300px;
   height: 275px;
   border-radius: 50%;
-  border: 5px solid hotpink;
+  border: 5px solid #e62184;
   background: white;
   z-index: 3;
 }
@@ -554,12 +554,16 @@ main .nametherese:before {
 main .hostname {
   margin-top: 20px;
   padding: 10px;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   width: 20%;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.3em;
   margin-bottom: 10px;
+}
+
+main .hostnametherese {
+  background: #1f1f1f;
 }
 
 @media (min-width: 200px) and (max-width: 415px) {
@@ -668,12 +672,12 @@ main .showabout .show {
   text-transform: uppercase;
   height: 250px;
   width: 250px;
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
 }
 
 main .showabout .showtitle {
   font-size: 1.5em;
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
 }
 
 main .showabout .fas {
@@ -697,7 +701,7 @@ main .showabout .hottopics {
 
 footer {
   position: relative;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   height: 50vh;
 }
 

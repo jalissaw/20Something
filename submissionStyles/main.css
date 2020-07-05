@@ -36,7 +36,7 @@
   right: 50px;
   font-size: 1.4em;
   padding: 10px;
-  color: rgba(230, 10, 120, 0.6);
+  color: white;
 }
 
 .nav .links {
@@ -59,7 +59,7 @@
 }
 
 .nav .links .link a {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   text-decoration: none;
   padding: 10px;
   -webkit-transition: ease-in 0.4s;
@@ -68,7 +68,7 @@
 
 .nav .links .link a:hover {
   color: white;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 .shownav {
@@ -189,7 +189,7 @@
 
 .menu .menuline {
   position: absolute;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 .menu .menuline.changeColor {
@@ -329,8 +329,8 @@ header {
   width: 100%;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(85%), color-stop(15%, rgba(230, 10, 120, 0.6)));
-  background-image: linear-gradient(90deg, white, 85%, rgba(230, 10, 120, 0.6) 15%);
+  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(85%), color-stop(15%, #e62184));
+  background-image: linear-gradient(90deg, white, 85%, #e62184 15%);
 }
 
 header .submit {
@@ -360,7 +360,7 @@ header .submit .submitcontain {
 header .submit .submitcontain .submittitle {
   font-size: 2.3em;
   text-transform: uppercase;
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -401,7 +401,7 @@ header .submit .submitcontain .icons .icon {
   margin: 8px 0px;
   width: 30px;
   height: 30px;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
 }
@@ -454,22 +454,22 @@ header .submit .forminfo .form .finput {
 }
 
 header .submit .forminfo .form ::-webkit-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   font-size: 1.2em;
 }
 
 header .submit .forminfo .form :-ms-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   font-size: 1.2em;
 }
 
 header .submit .forminfo .form ::-ms-input-placeholder {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   font-size: 1.2em;
 }
 
 header .submit .forminfo .form ::placeholder {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   font-size: 1.2em;
 }
 
@@ -488,8 +488,8 @@ header .submit .forminfo .form .message {
 
 header .submit .forminfo .form .btn {
   margin-top: 12px;
-  color: #1f1f1f;
-  background: rgba(230, 10, 120, 0.6);
+  color: white;
+  background: #e62184;
   text-transform: uppercase;
   border: white 1.5px solid;
   width: 92%;

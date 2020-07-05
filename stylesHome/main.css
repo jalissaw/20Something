@@ -57,7 +57,7 @@
 }
 
 .nav .links .link a {
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   text-decoration: none;
 }
 
@@ -183,7 +183,7 @@
 
 .menu .menuline {
   position: absolute;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 .menu .menuline.changeColor {
@@ -362,7 +362,7 @@ main .podcast .episode {
   height: 100%;
   width: 100%;
   color: #1f1f1f;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
 }
 
 main .podcast .episode .latest {
@@ -496,7 +496,7 @@ main .podcast .episode audio::-webkit-media-controls-panel {
 }
 
 main .podcast .episode audio::-webkit-media-controls-play-button {
-  background-color: rgba(230, 10, 120, 0.6);
+  background-color: #e62184;
   border-radius: 40px;
   height: 33px;
   width: 45px;
@@ -638,7 +638,7 @@ main .newsletter .subscribetitle {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.8em;
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   padding: 0px 20px;
   margin-bottom: 5px;
 }
@@ -682,7 +682,7 @@ main .newsletter form .email {
   text-decoration: none;
   height: 40px;
   width: 30%;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   border: none;
   padding-left: 8px;
 }
@@ -722,13 +722,13 @@ main .newsletter form ::placeholder {
 }
 
 main .newsletter form .btn {
-  border: solid 2px rgba(230, 10, 120, 0.6);
+  border: solid 2px #e62184;
   text-align: center;
   background: transparent;
   text-transform: uppercase;
   height: 40px;
   width: 10%;
-  color: rgba(230, 10, 120, 0.6);
+  color: #e62184;
   -webkit-transition: ease-in 0.4s;
   transition: ease-in 0.4s;
 }
@@ -761,7 +761,7 @@ main .newsletter form .btn:hover {
 
 footer {
   position: relative;
-  background: rgba(230, 10, 120, 0.6);
+  background: #e62184;
   height: 50vh;
 }
 
