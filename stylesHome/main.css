@@ -1080,7 +1080,7 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.55;
     width: 100%;
   }
 }
@@ -1095,38 +1095,8 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.55;
     width: 100%;
-  }
-}
-
-@-webkit-keyframes updown {
-  0% {
-    opacity: 0;
-    height: 0%;
-  }
-  50% {
-    opacity: 0.2;
-    height: 50%;
-  }
-  100% {
-    opacity: 0.4;
-    height: 100%;
-  }
-}
-
-@keyframes updown {
-  0% {
-    opacity: 0;
-    height: 0%;
-  }
-  50% {
-    opacity: 0.2;
-    height: 50%;
-  }
-  100% {
-    opacity: 0.4;
-    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

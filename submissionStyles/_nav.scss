@@ -3,20 +3,14 @@
 .nav {
     
     @include displayNav;
-    height: 10vh;
+    // height: 10vh;
     position: fixed;
-    // padding: 10px;
+    padding: 10px;
     width: 100%;
     z-index: 3;
     overflow: hidden;
-    @media #{$tablets} {
-        display: none;
-    }
-
-    @media #{$stablets} {
-        display: none;
-    }
-    @media #{$allphones} {
+    
+    @media #{$navgone} {
         display: none;
     }
 

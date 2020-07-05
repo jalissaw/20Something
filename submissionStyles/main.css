@@ -6,26 +6,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
   position: fixed;
+  padding: 10px;
   width: 100%;
   z-index: 3;
   overflow: hidden;
 }
 
-@media (min-width: 641px) and (max-width: 829px) {
-  .nav {
-    display: none;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 640px) {
-  .nav {
-    display: none;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 415px) {
+@media (max-width: 845px) {
   .nav {
     display: none;
   }
@@ -333,6 +321,27 @@ header {
   background-image: linear-gradient(90deg, white, 85%, #e62184 15%);
 }
 
+@media (min-width: 641px) and (max-width: 829px) {
+  header {
+    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(90%), color-stop(10%, #e62184));
+    background-image: linear-gradient(90deg, white, 90%, #e62184 10%);
+  }
+}
+
+@media (min-width: 416px) and (max-width: 640px) {
+  header {
+    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(95%), color-stop(5%, #e62184));
+    background-image: linear-gradient(90deg, white, 95%, #e62184 5%);
+  }
+}
+
+@media (min-width: 200px) and (max-width: 415px) {
+  header {
+    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(100%), color-stop(0%, #e62184));
+    background-image: linear-gradient(90deg, white, 100%, #e62184 0%);
+  }
+}
+
 header .submit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,7 +363,6 @@ header .submit {
 
 header .submit .submitcontain {
   z-index: 1;
-  position: relative;
 }
 
 header .submit .submitcontain .submittitle {
@@ -366,6 +374,36 @@ header .submit .submitcontain .submittitle {
   padding-left: 20px;
 }
 
+@media (min-width: 416px) and (max-width: 640px) {
+  header .submit .submitcontain .submittitle {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 525px) {
+  header .submit .submitcontain .submittitle {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  header .submit .submitcontain .submittitle {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  header .submit .submitcontain .submittitle {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 320px) {
+  header .submit .submitcontain .submittitle {
+    font-size: 1.4em;
+  }
+}
+
 header .submit .submitcontain .submitinfo {
   margin: 0 auto;
   width: 50%;
@@ -375,40 +413,52 @@ header .submit .submitcontain .submitinfo {
   color: #1f1f1f;
 }
 
-header .submit .submitcontain .icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 5%;
-  right: 50px;
+@media (min-width: 830px) and (max-width: 1200px) {
+  header .submit .submitcontain .submitinfo {
+    width: 70%;
+  }
 }
 
-header .submit .submitcontain .icons .icon {
-  padding: 20px;
-  color: white;
-  font-size: 1.5em;
-  margin: 8px 0px;
-  width: 30px;
-  height: 30px;
-  background: #e62184;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
+@media (min-width: 641px) and (max-width: 829px) {
+  header .submit .submitcontain .submitinfo {
+    width: 70%;
+    font-size: 0.9em;
+  }
 }
 
-header .submit .submitcontain .icons .icon:hover {
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
+@media (min-width: 416px) and (max-width: 640px) {
+  header .submit .submitcontain .submitinfo {
+    width: 80%;
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 525px) {
+  header .submit .submitcontain .submitinfo {
+    width: 80%;
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  header .submit .submitcontain .submitinfo {
+    width: 80%;
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  header .submit .submitcontain .submitinfo {
+    width: 80%;
+    font-size: 0.65em;
+  }
+}
+
+@media (max-width: 320px) {
+  header .submit .submitcontain .submitinfo {
+    width: 80%;
+    font-size: 0.65em;
+  }
 }
 
 header .submit .forminfo {
@@ -442,8 +492,39 @@ header .submit .forminfo .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  padding-bottom: 10px;
   width: 50%;
+}
+
+@media (min-width: 641px) and (max-width: 829px) {
+  header .submit .forminfo .form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 640px) {
+  header .submit .forminfo .form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 415px) {
+  header .submit .forminfo .form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+  header .submit .forminfo .form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  header .submit .forminfo .form {
+    width: 80%;
+  }
 }
 
 header .submit .forminfo .form .finput {
@@ -486,16 +567,29 @@ header .submit .forminfo .form .message {
   border: #1f1f1f 1px solid;
 }
 
+@media (max-width: 320px) {
+  header .submit .forminfo .form .message {
+    height: 125px;
+  }
+}
+
 header .submit .forminfo .form .btn {
   margin-top: 12px;
   color: white;
   background: #e62184;
   text-transform: uppercase;
   border: white 1.5px solid;
-  width: 92%;
+  width: 92.5%;
   height: 50px;
   font-size: 1.3em;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
+}
+
+header .submit .forminfo .form .btn:hover {
+  background: white;
+  color: #e62184;
+  border: 5px solid #e62184;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

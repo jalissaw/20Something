@@ -17,6 +17,20 @@ header {
     width: 100%;
     transition: ease 0.4s;
     background-image: linear-gradient(90deg, white, 85%, $primary-color 15%);
+    
+    @media #{$tablets} {
+        background-image: linear-gradient(90deg, white, 90%, $primary-color 10%);
+    }
+    @media #{$stablets} {
+        background-image: linear-gradient(90deg, white, 95%, $primary-color 5%);
+    }
+    @media #{$allphones} {
+        background-image: linear-gradient(90deg, white, 100%, $primary-color 0%);
+    }
+
+
+
+    
 
     .submit {
         display: flex;
@@ -26,18 +40,11 @@ header {
         text-align: center;
         height: 100%;
         width: 100%;
-        // background: $secondary-color;
-        
 
         .submitcontain {
-            // margin: 100px 0px;
-            // height: 10%;
-            // width: 50%;
+            // height: 50%;
             z-index: 1;
-            // border: white 5px solid;
-            // border-radius: 40px;
-            // background: $primary-color;
-            position: relative;
+            // position: relative;
 
             .submittitle {
                 font-size: 2.3em;
@@ -46,7 +53,23 @@ header {
                 padding-top: 20px;
                 padding-right: 20px;
                 padding-left: 20px;
-                // background: $secondary-color;
+
+                @media #{$stablets} {
+                    font-size: 2em;
+                }
+
+                @media #{$xstablets} {
+                    font-size: 1.8em;
+                }
+                @media #{$lphones} {
+                    font-size: 1.8em;
+                }
+                @media #{$mphones} {
+                    font-size: 1.6em;
+                }
+                @media #{$sphones} {
+                    font-size: 1.4em;
+                }
             }
 
             .submitinfo {
@@ -56,34 +79,36 @@ header {
                 font-size: 0.95em;
                 line-height: 25px;
                 color: $secondary-color;
-                // text-shadow: 20px 0.1px 5px $secondary-color;
-            }
 
-            .icons {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                justify-content: center;
-                align-items: center;
-                top: 5%;
-                right: 50px;
-                // bottom: 15px;
-                
-                .icon {
-                    padding: 20px;
-                    color: white;
-                    font-size: 1.5em;
-                    margin: 8px 0px;
-                    width: 30px;
-                    height: 30px;
-                    background: $primary-color;
-                    transition: ease-in 0.3s;
-
-                    &:hover {
-                        transform: translateX(-20px);
-                        
-                    }
+                @media #{$laptops} {
+                    width: 70%;
                 }
+                @media #{$tablets} {
+                    width: 70%;
+                    font-size: 0.9em;
+                }
+
+                @media #{$stablets} {
+                    width: 80%;
+                    font-size: 0.85em;
+                }
+                @media #{$xstablets} {
+                    width: 80%;
+                    font-size: 0.8em;
+                }
+                @media #{$lphones} {
+                    width: 80%;
+                    font-size: 0.7em;
+                }
+                @media #{$mphones} {
+                    width: 80%;
+                    font-size: 0.65em;
+                }
+                @media #{$sphones} {
+                    width: 80%;
+                    font-size: 0.65em;
+                }
+
             }
         }
 
@@ -99,16 +124,32 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-top: 50px;
+                margin-top: 30px;
+                padding-bottom: 10px;
                 width: 50%;
+
+                @media #{$tablets} {
+                    width: 70%;
+                }
+                @media #{$stablets} {
+                    width: 70%;
+                }
+                @media #{$lphones} {
+                    width: 80%;
+                }
+                @media #{$mphones} {
+                    width: 80%;
+                }
+                @media #{$sphones} {
+                    width: 80%;
+                }
+                
 
                 .finput {
                     height: 40px;
                     width: 90%;
                     padding-left: 10px;
-                    // background: $primary-color;
                     border: $secondary-color 1px solid;
-                    // border-bottom: $primary-color 2px solid;
                 }
 
                 ::placeholder {
@@ -121,13 +162,16 @@ header {
                 }
 
                 .message {
-                    // background: $primary-color;
                     border: 2px solid $secondary-color;
                     width: 90%;
                     resize: vertical;
                     padding-left: 10px;
                     padding-top: 5px;
                     border: $secondary-color 1px solid;
+
+                    @media #{$sphones} {
+                        height: 125px;;
+                    }
                 }
 
                 .btn {
@@ -136,11 +180,17 @@ header {
                     background: $primary-color;
                     text-transform: uppercase;
                     border:white 1.5px solid;
-                    width: 92%;
+                    width: 92.5%;
                     height: 50px;
                     font-size: 1.3em;
                     transition: ease 0.4s;
-                    // box-shadow: 2px 2px 2px $primary-color;
+
+                    &:hover {
+                        background: white;
+                        color: $primary-color;
+                        border: 5px solid $primary-color;
+                        cursor: pointer;
+                    }
                 }
             }
         }
