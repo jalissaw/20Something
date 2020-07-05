@@ -20,10 +20,10 @@ header {
 
     .submit {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        flex-wrap: wrap;
         height: 100%;
         width: 100%;
         // background: $secondary-color;
@@ -31,7 +31,7 @@ header {
 
         .submitcontain {
             // margin: 100px 0px;
-            height: 10%;
+            // height: 10%;
             // width: 50%;
             z-index: 1;
             // border: white 5px solid;
@@ -44,13 +44,15 @@ header {
                 text-transform: uppercase;
                 color: $primary-color;
                 padding-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
                 // background: $secondary-color;
             }
 
             .submitinfo {
                 margin: 0 auto;
-                width: 60%;
-                padding-top: 5px;
+                width: 50%;
+                padding-top: 15px;
                 font-size: 0.95em;
                 line-height: 25px;
                 color: $secondary-color;
@@ -97,7 +99,7 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 60%;
+                margin-top: 50px;
                 width: 50%;
 
                 .finput {

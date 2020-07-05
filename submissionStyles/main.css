@@ -61,10 +61,14 @@
 .nav .links .link a {
   color: rgba(230, 10, 120, 0.6);
   text-decoration: none;
+  padding: 10px;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
 }
 
 .nav .links .link a:hover {
   color: white;
+  background: rgba(230, 10, 120, 0.6);
 }
 
 .shownav {
@@ -333,6 +337,10 @@ header .submit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -340,14 +348,11 @@ header .submit {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   height: 100%;
   width: 100%;
 }
 
 header .submit .submitcontain {
-  height: 10%;
   z-index: 1;
   position: relative;
 }
@@ -357,12 +362,14 @@ header .submit .submitcontain .submittitle {
   text-transform: uppercase;
   color: rgba(230, 10, 120, 0.6);
   padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 header .submit .submitcontain .submitinfo {
   margin: 0 auto;
-  width: 60%;
-  padding-top: 5px;
+  width: 50%;
+  padding-top: 15px;
   font-size: 0.95em;
   line-height: 25px;
   color: #1f1f1f;
@@ -435,7 +442,7 @@ header .submit .forminfo .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60%;
+  margin-top: 50px;
   width: 50%;
 }
 

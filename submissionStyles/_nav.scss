@@ -38,13 +38,17 @@
             text-transform: uppercase;
             margin: 0px 10px;
             transition: ease-in 0.3s;
+           
 
             a {
                 color: $primary-color;
                 text-decoration: none;
+                padding: 10px;
+                transition: ease-in 0.4s; 
 
                 &:hover {
-                  color: white;
+                    color: white;
+                  background: $primary-color;
                 }
             }
         }
