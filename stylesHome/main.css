@@ -81,7 +81,9 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  height: 0;
+  height: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   width: 100%;
   z-index: 4;
   opacity: 0;
@@ -93,7 +95,8 @@
 .shownav.appear {
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  height: 100%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
   opacity: 1;
 }
 
@@ -572,6 +575,12 @@ main .podcast .fas {
   color: white;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media (max-width: 320px) {
+  main .podcast .fas {
+    font-size: 18px;
+  }
 }
 
 main .podcast .fas:hover {

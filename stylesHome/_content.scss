@@ -183,6 +183,10 @@ main {
             background: $secondary-color;
             color: white;
             transition: 0.4s ease;
+
+            @media #{$sphones} {
+                font-size: 18px;
+            }
             
             &:hover {
                 cursor: pointer;
