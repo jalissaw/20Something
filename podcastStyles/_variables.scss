@@ -1,0 +1,32 @@
+$primary-color: rgb(230, 33, 132);
+$secondary-color: rgb(31, 31, 31);
+
+
+@mixin displayNav {
+    display: flex;
+    align-items: center;
+}
+
+@mixin displayMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$navgone: "(max-width: 845px)";
+$pushform: "(max-width: 845px)";
+$laptops: "(min-width: 830px) and (max-width: 1200px)";
+$tablets: "(min-width: 641px) and (max-width:829px)";
+$stablets: "(min-width: 416px) and (max-width:640px)";
+$xstablets: "(min-width: 416px) and (max-width:525px)";
+$allphones: "(min-width: 200px) and (max-width: 415px)";
+$lphones: "(min-width: 375px) and (max-width: 415px)";
+$mphones: "(min-width: 321px) and (max-width: 374px)";
+$sphones: "(max-width: 320px)";

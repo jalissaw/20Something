@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap');
+
+@import 'nav';
+// @import 'content';
+// @import 'footer';
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Fira Sans;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
