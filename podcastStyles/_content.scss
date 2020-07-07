@@ -1,0 +1,51 @@
+main {
+    width: 100%;
+
+
+    .podcastepisodes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .episode {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            width: 33.3%;
+            // padding: 0px 20px;
+
+            img {
+                height: 45%;
+                width: 80%;
+                box-shadow: $secondary-color 2px 2px 6px;
+            }
+
+            .episodenumber {
+                padding: 10px 0px;
+                background: $secondary-color;
+                color: white;
+                width: 80%;
+                text-align: center;
+                box-shadow: $secondary-color 2px 2px 6px;
+            }
+
+            .title {
+                font-size: 1em;
+                text-transform: uppercase;
+                color: $primary-color;
+                width: 80%;
+                padding-top: 5px;
+            }
+
+            .description {
+                font-size: 0.85em;
+                width: 80%;
+                padding-top: 10px;
+                height: 40%;
+            }
+        }
+
+    }   
+}
