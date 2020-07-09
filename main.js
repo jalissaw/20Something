@@ -7,7 +7,7 @@ const toggler = document.querySelector('.toggle')
 const hamburger = document.querySelectorAll('.menuline')
 const body = document.querySelector('body');
 const words = document.querySelectorAll('.bounce p');
-const bounceDiv = document.querySelector('.bounce');
+const bounceDiv = document.querySelector('.bounce')
 
 //Change Color of background when you hover on links
 // for (var i = 0; i < links.length; i++) {
@@ -64,19 +64,18 @@ for (var i = 0; i < hamburger.length; i++) {
 
 //Bounce words in podcast tab
 
-
 for (let i = 0; i < words.length; i++) {
     setInterval(function timer() {
-
-        let width = Math.floor(Math.random() * innerWidth - 100) + 1;
-        let height = Math.floor(Math.random() * innerHeight - 100) + 1;
+        let width = Math.floor(Math.random() * bounceDiv.clientWidth);
+        let height = Math.floor(Math.random() * bounceDiv.clientHeight);
         words[i].style.transform = `translate(${width}px, ${height}px) `;
         words[i].style.transition = '1s ease-in-out'
     }, i * 2000);
 }
 // setInterval(bounceWords, 1000)
 // bounceWords()
-
+// console.log(bounceDiv.offSetWidth)
+console.log(bounceDiv.clientWidth)
 
 
 // let myAnimation = anime({
