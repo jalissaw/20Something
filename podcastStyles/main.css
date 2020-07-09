@@ -388,5 +388,29 @@ main .podcastepisodes .episode .description {
 header {
   height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+header .bounce {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+header .bounce span {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation: 0.4s ease-in alternate infinite;
+          animation: 0.4s ease-in alternate infinite;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+}
+
+header .bounce span.bounce {
+  -webkit-animation: 0.4s ease-in alternate infinite;
+          animation: 0.4s ease-in alternate infinite;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
 }
 /*# sourceMappingURL=main.css.map */
