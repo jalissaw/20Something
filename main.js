@@ -65,17 +65,26 @@ for (var i = 0; i < hamburger.length; i++) {
 //Bounce words in podcast tab
 
 for (let i = 0; i < words.length; i++) {
-    setInterval(function timer() {
-        let width = Math.floor(Math.random() * bounceDiv.clientWidth);
-        let height = Math.floor(Math.random() * bounceDiv.clientHeight);
-        words[i].style.transform = `translate(${width}px, ${height}px) `;
-        words[i].style.transition = '1s ease-in-out'
+    setTimeout(function timer() {
+        // const rect = words[i].getBoundingClientRect();
+        // const positionY = rect.top + window.pageYOffset;
+        // const positionX = rect.left + window.pageXOffset;
+        // console.log(positionX)
+        // console.log(positionY)
+
+        let width = Math.floor(Math.random() * window.innerWidth);
+        console.log(width + ":" + "width")
+        let height = Math.floor(Math.random() * window.innerHeight);
+        console.log(height + ":" + "height")
+        words[i].style.transform = `translate(${width}px , ${height}px) `;
+        words[i].style.transition = '1s ease-in-out';
     }, i * 2000);
 }
 // setInterval(bounceWords, 1000)
-// bounceWords()
+// bounceWords()W
 // console.log(bounceDiv.offSetWidth)
-console.log(bounceDiv.clientWidth)
+console.log(innerHeight)
+console.log(innerWidth)
 
 
 // let myAnimation = anime({
