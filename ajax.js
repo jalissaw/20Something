@@ -24,8 +24,6 @@ xhr.onload = function () {
             epiNum.innerHTML = `Episode ${episodes[i].episode}`
             epiTitle.innerHTML = `${episodes[i].title}`;
             epiDescription.innerHTML = `${episodes[i].description}`;
-            console.log(i)
-            console.log(episodes.length)
         }
         // make right arrow disappear when you get to the end of the list
         if (i === episodes.length - 1) {
@@ -44,7 +42,6 @@ xhr.onload = function () {
             epiNum.innerHTML = `Episode ${episodes[i].episode}`;
             epiTitle.innerHTML = `${episodes[i].title}`;
             epiDescription.innerHTML = `${episodes[i].description}`;
-            console.log(i)
         }
         // make right arrow reappear on click
         if (i !== episodes.length - 1) {
@@ -60,19 +57,5 @@ xhr.onload = function () {
 xhr.open('GET', 'data/episodes.json', true);
 xhr.setRequestHeader("content-type", "application/json");
 xhr.send();
-
-
-const formData = new FormData();
-
-
-formData.append("format", "json");
-formData.append("url", "https://soundcloud.com/20something_living/tracks");
-
-fetch('http://soundcloud.com/oembed', {
-    method: 'POST',
-    body: formData,
-}).then(function (response) {
-    console.log(response);
-});
 
 
