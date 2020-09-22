@@ -18,13 +18,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .nav {
     display: none;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -163,13 +163,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .menu {
     display: inline;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .menu {
     display: inline;
   }
@@ -374,7 +374,7 @@ main .podcast .episode .latest {
   font-size: 1.2em;
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .podcast .episode .latest {
     font-size: 0.9em;
   }
@@ -392,7 +392,7 @@ main .podcast .episode .episodenum {
   padding-top: 20px;
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .podcast .episode .episodenum {
     zoom: 0.8;
   }
@@ -414,13 +414,13 @@ main .podcast .episode .episodetitle {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .podcast .episode .episodetitle {
     font-size: 1em;
   }
 }
 
-@media (min-width: 375px) and (max-width: 415px) {
+@media (min-width: 375px) and (max-width: 480px) {
   main .podcast .episode .episodetitle {
     font-size: 0.8em;
   }
@@ -470,13 +470,13 @@ main .podcast .episode .audio {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .podcast .episode .audio {
     width: 70%;
   }
 }
 
-@media (min-width: 375px) and (max-width: 415px) {
+@media (min-width: 375px) and (max-width: 480px) {
   main .podcast .episode .audio {
     width: 80%;
   }
@@ -519,7 +519,7 @@ main .podcast .episode .episodedescription {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .podcast .episode .episodedescription {
     font-size: 0.8em;
     line-height: 25px;
@@ -527,7 +527,7 @@ main .podcast .episode .episodedescription {
   }
 }
 
-@media (min-width: 375px) and (max-width: 415px) {
+@media (min-width: 375px) and (max-width: 480px) {
   main .podcast .episode .episodedescription {
     font-size: 0.7em;
     line-height: 25px;
@@ -652,13 +652,13 @@ main .newsletter .subscribetitle {
   margin-bottom: 5px;
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .newsletter .subscribetitle {
     font-size: 1.2em;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .newsletter .subscribetitle {
     font-size: 0.95em;
   }
@@ -669,13 +669,13 @@ main .newsletter .subtitle {
   font-size: 0.95em;
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .newsletter .subtitle {
     font-size: 0.7em;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .newsletter .subtitle {
     font-size: 0.6em;
     width: 50%;
@@ -702,13 +702,13 @@ main .newsletter form .email {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .newsletter form .email {
     width: 50%;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .newsletter form .email {
     width: 70%;
   }
@@ -755,13 +755,13 @@ main .newsletter form .btn:hover {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   main .newsletter form .btn {
     width: 20%;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   main .newsletter form .btn {
     margin-top: 12px;
     width: 72%;
@@ -771,55 +771,9 @@ main .newsletter form .btn:hover {
 footer {
   position: relative;
   background: #e62184;
-  height: 50vh;
 }
 
-@media (min-width: 830px) and (max-width: 1200px) {
-  footer {
-    zoom: 0.8;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 829px) {
-  footer {
-    zoom: 0.7;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 640px) {
-  footer {
-    zoom: 0.6;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 450px) {
-  footer {
-    height: 70vh;
-    text-align: center;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 415px) {
-  footer {
-    zoom: 0.6;
-    height: 70vh;
-  }
-}
-
-@media (min-width: 321px) and (max-width: 374px) {
-  footer {
-    zoom: 0.6;
-    height: 80vh;
-  }
-}
-
-@media (max-width: 320px) {
-  footer {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   footer {
     text-align: center;
   }
@@ -832,9 +786,12 @@ footer .footercontain {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 650px;
+          flex: 1 1 650px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 15px;
+  padding: 30px 15px 100px;
 }
 
 footer .footercontain .sponsors {
@@ -983,24 +940,6 @@ footer .copyright .copyname {
 @media (max-width: 320px) {
   footer .copyright .copyname {
     font-size: 0.9em;
-  }
-}
-
-@media (min-width: 830px) and (max-width: 1200px) {
-  footer .copyright {
-    zoom: 0.9;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 829px) {
-  footer .copyright {
-    zoom: 0.8;
-  }
-}
-
-@media (min-width: 416px) and (max-width: 640px) {
-  footer .copyright {
-    zoom: 0.8;
   }
 }
 

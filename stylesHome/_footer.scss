@@ -4,33 +4,6 @@
 footer {
     position: relative;
     background: $primary-color;
-    height: 50vh;
-    
-    @media #{$laptops} {
-        zoom: 0.8;
-    }
-    
-    @media #{$tablets} {
-        zoom: 0.7;
-    }
-    @media #{$stablets} {
-        zoom: 0.6;
-    }
-    @media #{$xstablets} {
-        height: 70vh;
-        text-align: center;
-    }
-    @media #{$lphones} {
-        zoom: 0.6;
-        height: 70vh;
-    }
-    @media #{$mphones} {
-        zoom: 0.6;
-        height: 80vh;
-    }
-    @media #{$sphones} {
-        height: 100vh;
-    }
     
     @media #{$allphones} {
         text-align: center;
@@ -40,8 +13,9 @@ footer {
     .footercontain {
         display: flex;
         justify-content: space-evenly;
+        flex: 1 1 650px;
         flex-wrap: wrap;
-        padding-top: 15px;
+        padding: 30px 15px 100px;
         
         .sponsors {
             @include displayFooter;
@@ -159,17 +133,6 @@ footer {
         
     }
         
-        @media #{$laptops} {
-            zoom: 0.9;
-        }
-        
-        @media #{$tablets} {
-            zoom: 0.8;
-        }
-        
-        @media #{$stablets} {
-            zoom: 0.8;
-        }
     }
    
 }
