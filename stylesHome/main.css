@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,6 +8,10 @@
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   padding: 10px;
   width: 100%;
   z-index: 3;
@@ -32,7 +37,7 @@
 
 .nav .logo {
   position: absolute;
-  right: 50px;
+  left: 50px;
   font-size: 1.4em;
   padding: 10px;
 }
@@ -45,12 +50,12 @@
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
+  padding-right: 60px;
 }
 
 .nav .links .link {
   padding: 10px 10px;
   font-size: 1.2em;
-  text-transform: uppercase;
   margin: 0px 10px;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
@@ -948,7 +953,7 @@ footer .copyright .copyname {
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  font-family: Fira Sans;
+  font-family: Noto Sans TC, Fira Sans;
 }
 
 header {
@@ -979,9 +984,7 @@ header .video:before {
   content: '';
   position: absolute;
   background: url("../wave.gif");
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 0;
   z-index: -1;
