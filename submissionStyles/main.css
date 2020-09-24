@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,6 +53,10 @@
   padding-right: 60px;
 }
 
+.nav .links a:last-child {
+  color: white;
+}
+
 .nav .links .link {
   padding: 10px 10px;
   font-size: 1.2em;
@@ -63,9 +68,13 @@
 .nav .links .link a {
   color: #e62184;
   text-decoration: none;
+  padding: 10px;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .nav .links .link a:hover {
+  background: #e62184;
   color: white;
 }
 
@@ -326,33 +335,11 @@
 }
 
 header {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   -webkit-transition: ease 0.4s;
   transition: ease 0.4s;
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(85%), color-stop(15%, #e62184));
-  background-image: linear-gradient(90deg, white, 85%, #e62184 15%);
-}
-
-@media (min-width: 641px) and (max-width: 829px) {
-  header {
-    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(90%), color-stop(10%, #e62184));
-    background-image: linear-gradient(90deg, white, 90%, #e62184 10%);
-  }
-}
-
-@media (min-width: 416px) and (max-width: 640px) {
-  header {
-    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(95%), color-stop(5%, #e62184));
-    background-image: linear-gradient(90deg, white, 95%, #e62184 5%);
-  }
-}
-
-@media (min-width: 200px) and (max-width: 415px) {
-  header {
-    background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(100%), color-stop(0%, #e62184));
-    background-image: linear-gradient(90deg, white, 100%, #e62184 0%);
-  }
+  background-image: linear-gradient(36deg, #e62184, 50%, white 0%);
 }
 
 header .submit {
@@ -382,9 +369,7 @@ header .submit .submitcontain .submittitle {
   font-size: 2.3em;
   text-transform: uppercase;
   color: #e62184;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 65px 20px 0px;
 }
 
 @media (min-width: 416px) and (max-width: 640px) {
@@ -507,7 +492,7 @@ header .submit .forminfo .form {
           align-items: center;
   margin-top: 30px;
   padding-bottom: 10px;
-  width: 50%;
+  width: 45%;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -544,7 +529,7 @@ header .submit .forminfo .form .finput {
   height: 40px;
   width: 90%;
   padding-left: 10px;
-  border: #1f1f1f 1px solid;
+  border: #1f1f1f 0.5px solid;
 }
 
 header .submit .forminfo .form ::-webkit-input-placeholder {
@@ -574,10 +559,12 @@ header .submit .forminfo .form .email {
 header .submit .forminfo .form .message {
   border: 2px solid #1f1f1f;
   width: 90%;
+  height: 220px;
   resize: vertical;
   padding-left: 10px;
   padding-top: 5px;
   border: #1f1f1f 1px solid;
+  outline-color: none;
 }
 
 @media (max-width: 320px) {
@@ -587,12 +574,13 @@ header .submit .forminfo .form .message {
 }
 
 header .submit .forminfo .form .btn {
+  display: inline-block;
   margin-top: 12px;
   color: white;
   background: #e62184;
   text-transform: uppercase;
   border: white 1.5px solid;
-  width: 92.5%;
+  width: 80%;
   height: 50px;
   font-size: 1.3em;
   -webkit-transition: ease 0.4s;

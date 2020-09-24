@@ -953,7 +953,7 @@ footer .copyright .copyname {
   padding: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
-  font-family: Noto Sans TC, Fira Sans;
+  font-family: Fira Sans, Noto Sans TC;
 }
 
 header {
@@ -1031,7 +1031,7 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.55;
+    opacity: 0.65;
     width: 100%;
   }
 }
@@ -1046,7 +1046,7 @@ header .video .intro {
     width: 50%;
   }
   100% {
-    opacity: 0.55;
+    opacity: 0.65;
     width: 100%;
   }
 }

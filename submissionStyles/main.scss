@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fira+Sans:wght@500&family=Fugaz+One&family=Krona+One&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
 
 @import 'nav';
 // @import 'content';
@@ -13,24 +14,10 @@
 }
 
 header {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     transition: ease 0.4s;
-    background-image: linear-gradient(90deg, white, 85%, $primary-color 15%);
-    
-    @media #{$tablets} {
-        background-image: linear-gradient(90deg, white, 90%, $primary-color 10%);
-    }
-    @media #{$stablets} {
-        background-image: linear-gradient(90deg, white, 95%, $primary-color 5%);
-    }
-    @media #{$allphones} {
-        background-image: linear-gradient(90deg, white, 100%, $primary-color 0%);
-    }
-
-
-
-    
+    background-image: linear-gradient(36deg, #e62184, 50%, white 0%);
 
     .submit {
         display: flex;
@@ -42,17 +29,13 @@ header {
         width: 100%;
 
         .submitcontain {
-            // height: 50%;
             z-index: 1;
-            // position: relative;
 
             .submittitle {
                 font-size: 2.3em;
                 text-transform: uppercase;
                 color: $primary-color;
-                padding-top: 20px;
-                padding-right: 20px;
-                padding-left: 20px;
+                padding: 65px 20px 0px;
 
                 @media #{$stablets} {
                     font-size: 2em;
@@ -126,7 +109,7 @@ header {
                 align-items: center;
                 margin-top: 30px;
                 padding-bottom: 10px;
-                width: 50%;
+                width: 45%;
 
                 @media #{$tablets} {
                     width: 70%;
@@ -149,7 +132,7 @@ header {
                     height: 40px;
                     width: 90%;
                     padding-left: 10px;
-                    border: $secondary-color 1px solid;
+                    border: $secondary-color 0.5px solid;
                 }
 
                 ::placeholder {
@@ -164,10 +147,12 @@ header {
                 .message {
                     border: 2px solid $secondary-color;
                     width: 90%;
+                    height: 220px;
                     resize: vertical;
                     padding-left: 10px;
                     padding-top: 5px;
                     border: $secondary-color 1px solid;
+                    outline-color: none;
 
                     @media #{$sphones} {
                         height: 125px;;
@@ -175,12 +160,13 @@ header {
                 }
 
                 .btn {
+                    display: inline-block;
                     margin-top: 12px;
                     color: white;
                     background: $primary-color;
                     text-transform: uppercase;
                     border:white 1.5px solid;
-                    width: 92.5%;
+                    width: 80%;
                     height: 50px;
                     font-size: 1.3em;
                     transition: ease 0.4s;

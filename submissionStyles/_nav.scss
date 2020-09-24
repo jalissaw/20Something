@@ -31,6 +31,10 @@
         @include displayNav;
         list-style-type: none;
         padding-right: 60px;
+
+        a:last-child {
+            color: white;
+        }
         
         .link {
             padding: 10px 10px;
@@ -41,8 +45,11 @@
             a {
                 color: $primary-color;
                 text-decoration: none;
+                padding: 10px;
+                transition: 0.4s ease-in;
 
                 &:hover {
+                    background: $primary-color;
                   color: white;
                 }
             }
