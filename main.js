@@ -15,7 +15,7 @@ for (var i = 0; i < links.length; i++) {
         const colors = ['purple', 'pink', 'hotpink', 'lightpurple',
             'plum', 'palevioletred', 'lightcoral', 'fuchsia']
         colors.forEach(color => {
-            video.style.background = colors[Math.floor(Math.random() * colors.length)];
+            video.style.background = color[Math.floor(Math.random() * color.length)];
             video.style.opacity = 0.4;
             video.style.transition = 'ease-in 0.2s';
         });
@@ -40,9 +40,11 @@ window.addEventListener('scroll', function () {
 
 
     if (screenPosition < position) {
-        nav.style.background = 'rgb(31, 31, 31)';
+        nav.style.background = 'white';
+        nav.style.borderBottom = '0.5px solid black'
         logo.style.background = 'rgba(230, 10, 120, 0.6)';
     } else {
+        nav.style.borderBottom = 'none'
         nav.style.background = 'transparent';
         logo.style.background = 'transparent';
     }
