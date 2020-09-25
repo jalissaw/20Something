@@ -23,13 +23,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .nav {
     display: none;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -176,13 +176,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .menu {
     display: inline;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .menu {
     display: inline;
   }
@@ -372,7 +372,7 @@ header .submit .submitcontain .submittitle {
   padding: 65px 20px 0px;
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   header .submit .submitcontain .submittitle {
     font-size: 2em;
   }
@@ -424,7 +424,7 @@ header .submit .submitcontain .submitinfo {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   header .submit .submitcontain .submitinfo {
     width: 80%;
     font-size: 0.85em;
@@ -501,7 +501,7 @@ header .submit .forminfo .form {
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   header .submit .forminfo .form {
     width: 70%;
   }

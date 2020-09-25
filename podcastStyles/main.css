@@ -22,13 +22,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .nav {
     display: none;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .nav {
     display: none;
   }
@@ -167,13 +167,13 @@
   }
 }
 
-@media (min-width: 416px) and (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
   .menu {
     display: inline;
   }
 }
 
-@media (min-width: 200px) and (max-width: 415px) {
+@media (min-width: 200px) and (max-width: 480px) {
   .menu {
     display: inline;
   }
