@@ -41,11 +41,9 @@ window.addEventListener('scroll', function () {
 
     if (screenPosition < position) {
         nav.style.background = 'white';
-        nav.style.borderBottom = '0.5px solid black'
         logo.style.color = 'white';
         logo.style.background = 'rgba(230, 10, 120, 0.6)';
     } else {
-        nav.style.borderBottom = 'none'
         nav.style.background = 'transparent';
         logo.style.background = 'transparent';
         logo.style.color = 'black';

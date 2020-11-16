@@ -95,14 +95,14 @@ footer {
         color: $secondary-color;
         transition: ease-in 0.4s;
 
+        &:hover {
+            color: white;
+            
+        }
+
         @media #{$sphones} {
             margin: 0px 2px;
             font-size: 25px;
-        }
-
-        &:hover {
-            border: solid 2px white;
-            
         }
     }
 

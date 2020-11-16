@@ -896,15 +896,15 @@ footer .icon {
   transition: ease-in 0.4s;
 }
 
+footer .icon:hover {
+  color: white;
+}
+
 @media (max-width: 320px) {
   footer .icon {
     margin: 0px 2px;
     font-size: 25px;
   }
-}
-
-footer .icon:hover {
-  border: solid 2px white;
 }
 
 footer .copyright {
