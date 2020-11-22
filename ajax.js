@@ -38,6 +38,8 @@ xhr.onload = function () {
     })
 
     // on click numerate through podcast episode by clicking left
+
+
     arrowLeft.addEventListener('click', () => {
         if (i) {
             i--
