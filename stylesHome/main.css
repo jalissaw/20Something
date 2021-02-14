@@ -370,7 +370,6 @@ main .podcast .episode {
   height: 100%;
   width: 100%;
   color: #1f1f1f;
-  background: #e62184;
 }
 
 main .podcast .episode .latest {
@@ -392,7 +391,7 @@ main .podcast .episode .episodenum {
   height: 40px;
   width: 100px;
   text-align: center;
-  background: #1f1f1f;
+  background: #e62184;
   color: white;
   padding-top: 20px;
 }
@@ -410,7 +409,7 @@ main .podcast .episode .episodetitle {
   font-size: 1.6em;
   margin-bottom: 50px;
   padding: 0px 30px;
-  color: #1f1f1f;
+  color: #e62184;
 }
 
 @media (min-width: 641px) and (max-width: 829px) {
@@ -559,7 +558,7 @@ main .podcast .episode .episodedescription {
 main .podcast .episode .episodedescription span {
   font-size: 1.2em;
   text-transform: uppercase;
-  color: white;
+  color: #e62184;
 }
 
 main .podcast .fas {
@@ -576,8 +575,7 @@ main .podcast .fas {
   bottom: 50px;
   font-size: 30px;
   padding: 10px 15px;
-  background: #1f1f1f;
-  color: white;
+  color: #e62184;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -745,6 +743,7 @@ main .newsletter form .btn {
   color: #e62184;
   -webkit-transition: ease-in 0.4s;
   transition: ease-in 0.4s;
+  border-radius: 40px;
 }
 
 main .newsletter form .btn:hover {

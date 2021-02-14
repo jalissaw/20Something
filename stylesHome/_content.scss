@@ -20,7 +20,6 @@ main {
             height: 100%;
             width: 100%;
             color: $secondary-color;
-            background: $primary-color;
 
             .latest {
                 margin-bottom: 10px;
@@ -39,7 +38,7 @@ main {
                height: 40px;
                width: 100px;
                text-align: center;
-               background: $secondary-color;
+               background: $primary-color;
                color: white;
                padding-top: 20px;
 
@@ -56,7 +55,7 @@ main {
                 font-size: 1.6em;
                 margin-bottom: 50px;
                 padding: 0px 30px;
-                color: $secondary-color;
+                color: $primary-color;
 
                 @media #{$tablets} {
                     font-size: 1.2em;
@@ -167,7 +166,7 @@ main {
                 span {
                     font-size: 1.2em;
                     text-transform: uppercase;
-                    color: white;
+                    color: $primary-color;
                 }
             }
         }
@@ -180,10 +179,9 @@ main {
             bottom: 50px;
             font-size: 30px;
             padding: 10px 15px;
-            background: $secondary-color;
-            color: white;
+            color: $primary-color;
             transition: 0.4s ease;
-
+            
             @media #{$sphones} {
                 font-size: 18px;
             }
@@ -302,6 +300,7 @@ main {
                 width: 10%;
                 color: $primary-color;
                 transition: ease-in 0.4s ;
+                border-radius: 40px;
 
                     &:hover {
                         color: white;
