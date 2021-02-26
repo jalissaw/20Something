@@ -12,6 +12,8 @@ const xhr = new XMLHttpRequest();
 
 
 xhr.onload = function () {
+
+
     const episodes = JSON.parse(this.responseText);
 
     let i = 0
